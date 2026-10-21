@@ -10,9 +10,9 @@ export function defaultSkillBudgets(jobId,level){const job=JOBS[jobId],l=Math.ma
 export function skillBudgets(jobId,level,overrides={}){const base=defaultSkillBudgets(jobId,level),job=JOBS[jobId];return{1:job?.tier>0&&level>=job.firstAdvancementLevel?Math.min(1000,integer(overrides.firstBudget,base[1])):0,2:job?.tier>=2&&level>=job.secondAdvancementLevel?Math.min(1000,integer(overrides.secondBudget,base[2])):0};}
 export function defaultSkillPriority(skills,order='starter'){return [...skills].filter(s=>s.tier>0).sort((a,b)=>{if(order==='source')return 0;const score=s=>/Mastery/.test(s.en)?50:/Booster/.test(s.en)?40:s.effects?.damagePercent!=null?30:/Critical/.test(s.en)?25:10;return score(b)-score(a);}).map(s=>s.id);}
 /** A constraint-checked planning aid; priority is user policy, not a proven guide.
- * @param {{jobId:string,weapon:string,level:number,overrides?:any,priority?:Array<string>}} options
+ * @param {{jobId:string,weapon:string,level:number,overrides?:any,priority?:Array<string>,spRule?:string}} options
  */
-export function buildSkillDraft({jobId,weapon,level,overrides={},priority=[]}){
+export function buildSkillDraft({jobId,weapon,level,overrides={},priority=[],spRule='tier-only'}){
  const target=Math.max(1,Math.min(200,Math.floor(Number(level)||1))),all=SKILLS[jobId]??[],job=JOBS[jobId],choices=skillWeaponChoices(jobId);
  if(!job||!choices.some(w=>w.id===weapon))return{points:{},rows:[],errors:['직업과 사용할 무기를 확인하세요.'],budgets:{1:0,2:0}};
  const allowed=skillPlanSkills(jobId,weapon).filter(s=>s.tier>0),byId=new Map(allowed.map(s=>[s.id,s])),ordered=[...new Set([...priority,...defaultSkillPriority(allowed)])].filter(id=>byId.has(id)),budgets=skillBudgets(jobId,target,overrides),points={},rows=[];
@@ -26,9 +26,9 @@ export function buildSkillDraft({jobId,weapon,level,overrides={},priority=[]}){
  for(let atLevel=1;atLevel<=target;atLevel++){
   const earned=defaultSkillBudgets(jobId,atLevel),available={1:Math.min(budgets[1],earned[1]),2:Math.min(budgets[2],earned[2])};if(atLevel===target){available[1]=budgets[1];available[2]=budgets[2];}
   const allocations=[];let changed=true;
-  while(changed){changed=false;for(const id of ordered){const skill=need(byId.get(id),atLevel);if(!skill)continue;const candidate={...points,[skill.id]:Number(points[skill.id]??0)+1};if(validateSkillPlan(all,candidate,available).length)continue;points[skill.id]=candidate[skill.id];const previous=allocations.find(a=>a.id===skill.id);if(previous)previous.amount++;else allocations.push({id:skill.id,name:skill.name,tier:skill.tier,amount:1});changed=true;break;}}
+  while(changed){changed=false;for(const id of ordered){const skill=need(byId.get(id),atLevel);if(!skill)continue;const candidate={...points,[skill.id]:Number(points[skill.id]??0)+1};if(validateSkillPlan(all,candidate,available,{tierOnly:spRule!=='downward'}).length)continue;points[skill.id]=candidate[skill.id];const previous=allocations.find(a=>a.id===skill.id);if(previous)previous.amount++;else allocations.push({id:skill.id,name:skill.name,tier:skill.tier,amount:1});changed=true;break;}}
   if(atLevel>=job.firstAdvancementLevel&&job.tier>0){const used=Object.values(points).reduce((a,b)=>a+Number(b),0);rows.push({level:atLevel,allocations,points:{...points},budgets:available,used,remaining:available[1]+available[2]-used,adjustment:atLevel===target?extra[1]+extra[2]:0});}
  }
  const used=Object.values(points).reduce((a,b)=>a+Number(b),0);
- return{jobId,weapon,level:target,points,rows,budgets,priority:ordered,excluded:all.filter(s=>s.tier>0&&!byId.has(s.id)).map(s=>({id:s.id,name:s.name})),unused:budgets[1]+budgets[2]-used,adjustments:extra,errors:validateSkillPlan(all,points,budgets),assumption:'기본 전직 레벨·SP 가정과 사용자 우선순위로 만든 계획 보조이며 검증된 최적 공략이 아닙니다.'};
+ return{jobId,weapon,level:target,points,rows,budgets,priority:ordered,excluded:all.filter(s=>s.tier>0&&!byId.has(s.id)).map(s=>({id:s.id,name:s.name})),unused:budgets[1]+budgets[2]-used,adjustments:extra,spRule,errors:validateSkillPlan(all,points,budgets,{tierOnly:spRule!=='downward'}),assumption:'기본 전직 레벨·SP 가정과 사용자 우선순위로 만든 계획 보조이며 검증된 최적 공략이 아닙니다.'};
 }

@@ -147,7 +147,7 @@ export function oneCastProbability({ min, max, hits = 1, hp, accuracy = 1, critC
   }
   return Number.isFinite(chance) ? bound(chance, 0, 1) : null;
 }
-export function validateSkillPlan(skills, points = {}, budgets = {}) {
+export function validateSkillPlan(skills, points = {}, budgets = {}, {tierOnly=false} = {}) {
   if (!Array.isArray(skills) || !points || typeof points !== 'object' || Array.isArray(points) || !budgets || typeof budgets !== 'object' || Array.isArray(budgets)) return ['SP 계획 데이터 형식을 확인하세요.'];
   const errors = [], known = new Set(skills.map(skill => String(skill.id))), byId = new Map(skills.map(skill => [String(skill.id), skill]));
   if (known.size !== skills.length) errors.push('스킬 목록의 중복 ID를 확인하세요.');
@@ -179,6 +179,7 @@ export function validateSkillPlan(skills, points = {}, budgets = {}) {
     visiting.delete(skill.id); visited.add(skill.id);
   }
   skills.forEach(visit);
+  if(tierOnly)for(const tier of tiers)if((spent.get(tier)??0)>numeric(budgets[tier]))errors.push(`${tier}차 SP가 부족해요. 차수별 분리 규칙을 적용합니다.`);
   // A point earned at tier T may fund T or below: each suffix needs enough higher-tier points.
   for (const threshold of [...tiers].sort((a, b) => b - a)) {
     const used = [...spent].filter(([tier]) => tier >= threshold).reduce((sum, [, value]) => sum + value, 0);

@@ -21,7 +21,7 @@ try{
  const page=await context.newPage();page.setDefaultTimeout(12000);page.setDefaultNavigationTimeout(20000);
  page.on('pageerror',e=>report.pageErrors.push({route:current,message:e.message}));
  page.on('console',m=>{if(m.type()==='error')report.consoleErrors.push({route:current,message:m.text().slice(0,350)});});
- page.on('requestfailed',r=>{if(!r.failure()?.errorText?.includes('ERR_ABORTED'))report.failedRequests.push({route:current,path:new URL(r.url()).pathname,failure:r.failure()?.errorText});});
+ page.on('requestfailed',r=>{if(!r.failure()?.errorText?.includes('ERR_ABORTED'))report.failedRequests.push({route:current,url:r.url(),failure:r.failure()?.errorText});});
  async function scan(feature,mode){current=mode+':'+feature.id;const before=report.pageErrors.length,start=Date.now();let failure=null;
   try{await page.goto(origin+'/#'+feature.id,{waitUntil:'domcontentloaded'});await page.waitForFunction(name=>document.querySelector('.breadcrumb strong')?.textContent===name,feature.name);await page.locator('main h1').first().waitFor({state:'visible'});await page.waitForTimeout(['market','ranking','gear','training','money'].includes(feature.id)?1100:350);}catch(e){failure=e.message.slice(0,400);}
   const dimensions=await page.evaluate(()=>{const vw=innerWidth,root=document.documentElement;return {viewport:vw,document:root.scrollWidth,body:document.body.scrollWidth,offenders:root.scrollWidth>vw+1?[...document.querySelectorAll('main *')].filter(e=>{const r=e.getBoundingClientRect(),s=getComputedStyle(e);return r.width>0&&r.right>vw+2&&s.position!=='fixed'&&s.display!=='none';}).slice(0,8).map(e=>({tag:e.tagName,class:e.className,left:Math.round(e.getBoundingClientRect().left),width:Math.round(e.getBoundingClientRect().width)})):[]};});
@@ -46,7 +46,7 @@ try{
  await page.getByRole('heading',{name:'글클메지지 확성기 · 거래소 시세',exact:true}).waitFor();
  await page.getByRole('button',{name:'연결 확인',exact:true}).waitFor();
  const gg=await (await context.request.get(origin+'/api/market/glclme')).json();assert.ok(['connected','cached','backoff','unchanged','waiting'].includes(gg.provider?.status));
- if(gg.provider.httpStatus===403){assert.equal(gg.stale,true);assert.match(await page.locator('main').innerText(),/403/);}
+ if(gg.provider.httpStatus===403){assert.equal(gg.stale,true);await page.getByRole('status').filter({hasText:'403'}).first().waitFor({timeout:15000});}
  report.ggConnection={status:gg.provider.status,httpStatus:gg.provider.httpStatus,hasActualData:!!gg.data};
  await page.getByRole('button',{name:'시세 기록',exact:true}).click();
  const quote=page.locator('.market-item-name').first();

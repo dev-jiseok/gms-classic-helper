@@ -61,10 +61,10 @@ export function createGlclmeReader({fetchFn=fetch,clock=Date.now,catalog=[]}={})
  async function read(itemId=null){
   if(itemId!==null&&!id(itemId))throw Error('올바른 아이템 ID를 선택하세요.');
   const key=itemId?String(itemId):'summary',now=clock(),previous=cache.get(key);
-  const result=(status,message='',data=previous?.data??null)=>({provider:{id:'glclme',name:'글클메지지',status,message,httpStatus:blockedStatus,sourceUrl:GLCLME_ORIGIN+'/market'},data,fetchedAt:previous?.fetchedAt??null,checkedAt:new Date(now).toISOString(),intervalSeconds:60,nextPollAt:new Date(Math.max(blockedUntil,(previous?.checkedAt??now)+60_000)).toISOString(),stale:status==='backoff'||!data||data.stale===true||data.ready===false,ready:!!data&&data.ready!==false});
+  const result=(status,message='',data=previous?.data??null)=>({provider:{id:'glclme',name:'글클메지지',status,message,httpStatus:blockedStatus,sourceUrl:GLCLME_ORIGIN+'/market'},data,fetchedAt:previous?.fetchedAt??null,checkedAt:new Date(now).toISOString(),intervalSeconds:60,nextPollAt:new Date(Math.max(blockedUntil,status==='waiting'?clock()+2_000:Math.max(clock(),previous?.checkedAt??now)+60_000)).toISOString(),stale:status==='backoff'||!data||data.stale===true||data.ready===false,ready:!!data&&data.ready!==false});
   if(blockedUntil>now)return result('backoff',blockedStatus===403?'글클메지지가 서버 요청을 거부했습니다 (403). 마지막 정상 자료가 있으면 그대로 표시합니다.':'공급원의 재시도 대기 중입니다.');
   if(previous&&now-previous.checkedAt<60_000)return result('cached');
-  if(pending.has(key))return result('waiting','다른 조회가 진행 중입니다. 마지막 정상 자료를 표시하며 다음 주기에 다시 확인합니다.');
+  if(pending.has(key))return result('waiting','다른 조회가 진행 중입니다. 마지막 정상 자료를 유지하며 잠시 후 자동으로 확인합니다.');
   pending.add(key);
   const task=(async()=>{
    try{

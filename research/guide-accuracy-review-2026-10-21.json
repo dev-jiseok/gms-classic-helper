@@ -1,0 +1,592 @@
+{
+  "checkedAt": "2026-10-21",
+  "scope": "23 guides: factual source review, not in-game effectiveness validation",
+  "guides": [
+    {
+      "id": "start-island",
+      "title": "Lv. 1–9: 섬 퀘스트를 동선에 묶기",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "MapleClassic Wiki · start-island",
+            "url": "https://mapleclassic.wiki/wiki/Getting_started",
+            "type": "community-reference"
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "id": "warrior-first",
+      "title": "Lv. 10–29 전사: 명중과 근접 동선부터 안정화",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 warrior 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/warrior-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · warrior-first",
+            "url": "https://mapleclassic.wiki/wiki/Warrior",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · warrior 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Warrior",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "magician-first",
+      "title": "Lv. 10–29 마법사: 물약 예산과 공격 주문 선택",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 magician 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/magician-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · magician-first",
+            "url": "https://mapleclassic.wiki/wiki/Magician",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · magician 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Magician",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "bowman-first",
+      "title": "Lv. 10–29 궁수: 사거리와 근접 대응을 함께 보기",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 bowman 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/bowman-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · bowman-first",
+            "url": "https://mapleclassic.wiki/wiki/Bowman",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · bowman 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Bowman",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "thief-first",
+      "title": "Lv. 10–29 도적: 표창·단검 진로와 보급 계획",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 thief 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/thief-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · thief-first",
+            "url": "https://mapleclassic.wiki/wiki/Thief",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · thief 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Thief",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "fighter-30",
+      "title": "Lv. 30–70 파이터: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 fighter 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/fighter-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · fighter-30",
+            "url": "https://mapleclassic.wiki/wiki/Warrior",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · warrior 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Warrior",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "page-30",
+      "title": "Lv. 30–70 페이지: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 page 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/page-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · page-30",
+            "url": "https://mapleclassic.wiki/wiki/Warrior",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · warrior 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Warrior",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "spearman-30",
+      "title": "Lv. 30–70 스피어맨: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 spearman 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/spearman-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · spearman-30",
+            "url": "https://mapleclassic.wiki/wiki/Warrior",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · warrior 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Warrior",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "firePoison-30",
+      "title": "Lv. 30–70 위자드 (불·독): 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 firePoison 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/fp-wizard-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · firePoison-30",
+            "url": "https://mapleclassic.wiki/wiki/Magician",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · magician 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Magician",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "iceLightning-30",
+      "title": "Lv. 30–70 위자드 (썬·콜): 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 iceLightning 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/il-wizard-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · iceLightning-30",
+            "url": "https://mapleclassic.wiki/wiki/Magician",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · magician 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Magician",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "cleric-30",
+      "title": "Lv. 30–70 클레릭: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 cleric 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/cleric-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · cleric-30",
+            "url": "https://mapleclassic.wiki/wiki/Magician",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · magician 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Magician",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "hunter-30",
+      "title": "Lv. 30–70 헌터: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 hunter 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/hunter-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · hunter-30",
+            "url": "https://mapleclassic.wiki/wiki/Bowman",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · bowman 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Bowman",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "crossbowman-30",
+      "title": "Lv. 30–70 사수: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 crossbowman 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/crossbowman-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · crossbowman-30",
+            "url": "https://mapleclassic.wiki/wiki/Bowman",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · bowman 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Bowman",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "assassin-30",
+      "title": "Lv. 30–70 어쌔신: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 assassin 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/assassin-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · assassin-30",
+            "url": "https://mapleclassic.wiki/wiki/Thief",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · thief 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Thief",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "bandit-30",
+      "title": "Lv. 30–70 시프: 전직 후 사냥·스킬·장비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "NiaMeowDB · 현재 bandit 공략",
+            "url": "https://meowdb.com/msclassic/ko/guides/bandit-class-guide",
+            "type": "community-guide"
+          },
+          {
+            "title": "MapleClassic Wiki · bandit-30",
+            "url": "https://mapleclassic.wiki/wiki/Thief",
+            "type": "community-reference"
+          },
+          {
+            "title": "Wiki · thief 스킬",
+            "url": "https://mapleclassic.wiki/wiki/Skills/Thief",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "SP 차수 사용 규칙이 MeowDB와 Wiki에서 상충합니다. 계획기는 기본적으로 차수별로 분리하며, 하위 차수 사용은 실제 게임에서 확인한 경우에만 선택합니다."
+        ]
+      }
+    },
+    {
+      "id": "quest-opportunity-cost",
+      "title": "돈퀘 선택: 보상보다 재료의 현재 가치를 먼저",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "MapleClassic Wiki · quest-opportunity-cost",
+            "url": "https://mapleclassic.wiki/wiki/Quests",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "원문 퀘스트 목록은 시간당 순이익을 검증한 돈퀘스트 순위가 아닙니다. 현재 호가·재료 소모·왕복 시간에 빈 값이 있으면 확정 수익으로 추천하지 않습니다."
+        ]
+      }
+    },
+    {
+      "id": "crafting-no-waste",
+      "title": "제작 육성: 숙련 상한에서 재료 낭비 줄이기",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "MapleClassic Wiki · crafting-no-waste",
+            "url": "https://mapleclassic.wiki/wiki/Crafting",
+            "type": "community-reference"
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "id": "shop-resident-discount",
+      "title": "NPC 구매: 시민권 할인과 구매 제한 먼저 확인",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "MapleClassic Wiki · shop-resident-discount",
+            "url": "https://mapleclassic.wiki/wiki/Citizenship",
+            "type": "community-reference"
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "id": "training-measurement",
+      "title": "사냥터 변경 전: 같은 길이로 두 곳 측정하기",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "community-source-checked",
+        "label": "커뮤니티 자료 대조",
+        "scope": "현재 접근 가능한 원문과 대조했습니다. Wiki의0.9.0·pre-launch 표기와 정식1.0.0 서버의 차이는 남아 있으며, 실게임 최적성 검증은 아닙니다.",
+        "sources": [
+          {
+            "title": "MapleClassic Wiki · training-measurement",
+            "url": "https://mapleclassic.wiki/wiki/Training_guide",
+            "type": "community-reference"
+          }
+        ],
+        "issues": [
+          "Wiki 사냥터 표는0.9.0의 레벨·스폰 기반 계산입니다. 직업·장비·명중·동선·경쟁과 현재 시세를 반영한 실측 순위가 아닙니다."
+        ]
+      }
+    },
+    {
+      "id": "launch-first-steps",
+      "title": "출시 첫날: 전직·보상·거래 시간을 함께 준비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "official-source-checked",
+        "label": "공식 공지 대조",
+        "scope": "공지의 조건·일정 확인. 실제 진행 상태는 게임에서 확인.",
+        "sources": [
+          {
+            "title": "Nexon 정식 출시 공지",
+            "url": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+            "type": "official"
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "id": "launch-daily-leaves",
+      "title": "Lv.10+: 잎사귀30개 출석을 사냥에 묶기",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "official-source-checked",
+        "label": "공식 공지 대조",
+        "scope": "공지의 조건·일정 확인. 실제 진행 상태는 게임에서 확인.",
+        "sources": [
+          {
+            "title": "Nexon 정식 출시 공지",
+            "url": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+            "type": "official"
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "id": "launch-trade-unlock",
+      "title": "Lv.15: 거래 해제까지24시간 계획",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "official-source-checked",
+        "label": "공식 공지 대조",
+        "scope": "공지의 조건·일정 확인. 실제 진행 상태는 게임에서 확인.",
+        "sources": [
+          {
+            "title": "Nexon 정식 출시 공지",
+            "url": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+            "type": "official"
+          }
+        ],
+        "issues": []
+      }
+    },
+    {
+      "id": "launch-housing",
+      "title": "Lv.12+: 시민권과 계정 공유 주거 준비",
+      "review": {
+        "checkedAt": "2026-10-21",
+        "status": "official-source-checked",
+        "label": "공식 공지 대조",
+        "scope": "공지의 조건·일정 확인. 실제 진행 상태는 게임에서 확인.",
+        "sources": [
+          {
+            "title": "Nexon 정식 출시 공지",
+            "url": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+            "type": "official"
+          }
+        ],
+        "issues": []
+      }
+    }
+  ]
+}

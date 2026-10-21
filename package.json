@@ -18,7 +18,11 @@
     "dev": "npm --prefix web run dev --",
     "build": "npm --prefix web run build",
     "check": "npm --prefix web run check",
-    "test": "npm --prefix web test"
+    "test": "npm --prefix web test",
+    "qa:journeys": "node scripts/qa-user-journeys.mjs",
+    "qa:guides": "node scripts/qa-guide-accuracy.mjs",
+    "qa:routes": "node scripts/qa-routes.mjs",
+    "qa:media": "node scripts/qa-game-media-fallback.mjs"
   },
   "devDependencies": {
     "rea-agents": "6.7.0"

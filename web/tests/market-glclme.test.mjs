@@ -47,6 +47,6 @@ test('60 second cache uses fixed item endpoint and ETag, respecting Retry-After'
 test('concurrent requests never borrow a pending Worker request Promise',async()=>{
  let release,calls=0;const gate=new Promise(resolve=>release=resolve);
  const read=createGlclmeReader({fetchFn:async()=>{calls++;await gate;return Response.json({items:[]});}});
- const first=read(),second=await read();assert.equal(second.provider.status,'waiting');assert.equal(second.data,null);assert.equal(calls,1);
+ const before=Date.now(),first=read(),second=await read();assert.ok(Date.parse(second.nextPollAt)>=before+1900&&Date.parse(second.nextPollAt)<=Date.now()+2100);assert.equal(second.provider.status,'waiting');assert.equal(second.data,null);assert.equal(calls,1);
  release();assert.equal((await first).provider.status,'connected');assert.equal((await read()).provider.status,'cached');
 });

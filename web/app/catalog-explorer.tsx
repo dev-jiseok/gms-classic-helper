@@ -34,13 +34,13 @@ export function CatalogExplorer({initialKind='monsters',fixedKind=false,title}:{
         if(kind==='quests'&&eligible){p.set('eligibleLevel',String(profile.level));p.set('job',currentJob);}
         if(completedIds)p.set('exclude',completedIds);
         const response=await fetch('/api/game-data?'+p,{signal:controller.signal});const json:any=await response.json();
-        if(!response.ok)throw new Error(json.error||'자료를 불러오지 못했습니다.');setResult(json);setLoading(false);
+        if(!response.ok)throw new Error(json.error||'자료를 불러오지 못했습니다.');if(!controller.signal.aborted){setResult({...json,kind});setLoading(false);}
       }catch(e:any){if(e.name!=='AbortError'){setError(e.message);setLoading(false);}}
     },220);
     return()=>{clearTimeout(timeout);controller.abort();};
   },[kind,query,page,category,maxLevel,eligible,completedIds,currentJob,profile.level]);
   function switchKind(next:CatalogKind) {setKind(next);setQuery('');setCategory('');setMaxLevel('');setPage(0);}
-  const rows=result?.rows||[];
+  const rows=result?.kind===kind?result.rows:[];
   return <>
     <SectionTitle eyebrow="THE CONNECTED MAPLE FIELD GUIDE" title={title||(fixedKind?LABELS[kind]:'연결해서 찾는 전체 도감')} description="공개 MCW 색인을 검색하고, 출현 맵·드롭·퀘스트·상점·제작을 함께 확인하세요." action={<Badge tone="green">참조 자료 · {result?.verifiedAt||'불러오는 중'}</Badge>}/>
     {!fixedKind&&<div className="tabs" aria-label="도감 종류">{(['monsters','items','maps','quests','npcs','recipes'] as CatalogKind[]).map(k=><button key={k} className={kind===k?'active':''} onClick={()=>switchKind(k)}>{LABELS[k]}</button>)}</div>}

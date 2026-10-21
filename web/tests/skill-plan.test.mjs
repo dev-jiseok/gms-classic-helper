@@ -13,9 +13,10 @@ test('all available jobs and weapon choices obey maxima, prerequisites and tier 
   assert.ok(Object.values(d.points).every(Number.isInteger));
  }
 });
-test('second-tier SP cannot be spent early and may fill first-tier skills later',()=>{
+test('second-tier SP stays separate by default and downward use requires an explicit rule',()=>{
  const low=buildSkillDraft({jobId:'fighter',weapon:'sword',level:29,overrides:{firstBudget:0,secondBudget:100}});assert.equal(low.budgets[2],0);assert.deepEqual(low.points,{});
- const advanced=buildSkillDraft({jobId:'fighter',weapon:'sword',level:30,overrides:{firstBudget:0,secondBudget:6},priority:['power','mastery']});assert.equal(advanced.points.power,6);assert.deepEqual(advanced.errors,[]);
+ const advanced=buildSkillDraft({jobId:'fighter',weapon:'sword',level:30,overrides:{firstBudget:0,secondBudget:6},priority:['power','mastery'],spRule:'downward'});assert.equal(advanced.points.power,6);assert.deepEqual(advanced.errors,[]);
+ const strict=buildSkillDraft({jobId:'fighter',weapon:'sword',level:30,overrides:{firstBudget:0,secondBudget:6},priority:['power','mastery']});assert.equal(strict.points.power??0,0);assert.ok(strict.points.mastery>0);
  const firstOnly=buildSkillDraft({jobId:'fighter',weapon:'sword',level:30,overrides:{firstBudget:20,secondBudget:0},priority:['mastery']});assert.equal(firstOnly.points.mastery??0,0);
 });
 test('custom totals are respected and unknown extra SP timing is marked at the target level',()=>{
