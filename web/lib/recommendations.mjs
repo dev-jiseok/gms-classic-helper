@@ -312,13 +312,28 @@ export function questMaterialNeeds(quest) {
   const complete = !missing.length && (quest.costsConfirmed === true || quest.consumptionComplete === true || legacyNoMaterials);
   return { required, consumed, held, complete, missing };
 }
+/** Quest-local guaranteed reward evidence. No profile, inventory, durations or
+ * unfinished-ancestor rewards enter this common-value comparison. */
+export function questRewardValue(quest, items = [], prices = [], now = Date.now()) {
+  let known = quest.rewardsComplete !== false && finite(quest.mesos) && Number(quest.mesos) >= 0, value = finite(quest.mesos) && Number(quest.mesos) >= 0 ? Number(quest.mesos) : 0;
+  if (quest.choiceRewards?.length || quest.rewardChoices?.length) known = false;
+  let estimated = false;
+  for (const stack of quest.rewardItems ?? []) {
+    const item = items.find(row => id(row.id) === id(stack.itemId));
+    const price = priceEvidence(prices, stack.itemId, { now, npcSell: item?.npcSell, equipment: item?.category === 'equip' });
+    if (price.price === null || !finite(stack.quantity) || Number(stack.quantity) < 0) known = false;
+    else {value += price.price * Number(stack.quantity); estimated ||= !price.certainSale;}
+  }
+  return { value: known ? value : value > 0 ? value : null, total: known ? value : null, partial: value, complete: known, estimated };
+}
 /** @param {any} input */
-export function recommendQuests({ profile, quests = [], items = [], prices = [], completed = {}, inventory = {}, durations = {}, citizenship = {}, professions = {}, goal = 'progress', now = Date.now() }) {
+export function recommendQuests({ profile, quests = [], items = [], prices = [], completed = {}, inventory = {}, durations = {}, citizenship = {}, professions = {}, goal = 'progress', moneySort = 'reward', now = Date.now() }) {
   const byId = new Map(quests.map(quest => [id(quest.id), quest]));
   const done = { ...completed };
   for (const quest of quests) if (quest.legacyId && completed[id(quest.legacyId)]) done[id(quest.id)] = true;
   const currentJob = currentJobForProfile(profile);
   return quests.filter(quest => !done[id(quest.id)] && jobMatches(quest.jobs, currentJob)).map(quest => {
+    const commonReward = questRewardValue(quest, items, prices, now);
     const plan = prerequisitePlan(quest, byId, done);
     const gateRows = plan.ordered.map(step => ({ step, evidence: questGateEvidence(step, profile, { citizenship, professions, now }) }));
     const gateReasons = gateRows.flatMap(row => row.evidence.reasons.map(reason => `${row.step.name}: ${reason}`));
@@ -380,12 +395,18 @@ export function recommendQuests({ profile, quests = [], items = [], prices = [],
     const required = quest.requiredForAdvancement === true || quest.mandatory === true || /^job advancement$/i.test(String(quest.questType ?? ''));
     const urgent = Number.isFinite(deadline) && deadline >= now && deadline - now <= 24 * 3600000;
     const priority = (available && !expired ? 1000 : 0) + (required ? 500 : 0) + (urgent ? 200 : 0) + (ready ? 100 : 0) + (net !== null && net > 0 ? 20 : 0) + (materials.length && materials.every(row => !row.buyQuantity) ? 10 : 0);
-    return { id: id(quest.id), name: quest.name, quest, plan: plan.ordered.map(step => ({ id: id(step.id), name: step.name, minLevel: step.minLevel })), prerequisites, available: available && !expired, ready: ready && !expired, conditionsKnown, gates: gateReasons, expired, required, urgent, priority, reward: rewardKnown ? reward : null, knownPartialReward: reward, cost: costKnown ? cost : null, purchaseCost: preparationKnown ? purchaseCost : null, net, exp: expKnown ? exp : null, minutes: timeKnown ? minutes : null, netPerHour: net !== null && timeKnown ? net * 60 / minutes : null, expPerHour: expKnown && timeKnown ? exp * 60 / minutes : null, estimated, materials, missing: unique([...gateReasons, ...missing, ...blockers.map(step => `${step.name}: 레벨·직업 조건 확인 필요`)]), reasons: [required ? '전직·진행에 필요한 것으로 등록된 퀘스트' : null, urgent ? '24시간 이내 종료' : null, ready ? '미완료 선행 퀘스트 없음' : prerequisites.length ? `${prerequisites.length}개 선행 퀘스트와 함께 계획` : '게임에서 추가 조건 확인 필요', materials.length && materials.every(row => !row.buyQuantity) ? '등록된 필요 재료를 모두 보유' : null].filter(Boolean) };
+    return { id: id(quest.id), name: quest.name, quest, commonReward, plan: plan.ordered.map(step => ({ id: id(step.id), name: step.name, minLevel: step.minLevel })), prerequisites, available: available && !expired, ready: ready && !expired, conditionsKnown, gates: gateReasons, expired, required, urgent, priority, reward: rewardKnown ? reward : null, knownPartialReward: reward, cost: costKnown ? cost : null, purchaseCost: preparationKnown ? purchaseCost : null, net, exp: expKnown ? exp : null, minutes: timeKnown ? minutes : null, netPerHour: net !== null && timeKnown ? net * 60 / minutes : null, expPerHour: expKnown && timeKnown ? exp * 60 / minutes : null, estimated, materials, missing: unique([...gateReasons, ...missing, ...blockers.map(step => `${step.name}: 레벨·직업 조건 확인 필요`)]), reasons: [required ? '전직·진행에 필요한 것으로 등록된 퀘스트' : null, urgent ? '24시간 이내 종료' : null, ready ? '미완료 선행 퀘스트 없음' : prerequisites.length ? `${prerequisites.length}개 선행 퀘스트와 함께 계획` : '게임에서 추가 조건 확인 필요', materials.length && materials.every(row => !row.buyQuantity) ? '등록된 필요 재료를 모두 보유' : null].filter(Boolean) };
   }).sort((a, b) => {
+    const knownDifference = (left, right) => left === null && right === null ? 0 : left === null ? 1 : right === null ? -1 : right - left;
+    if (goal === 'money') {
+      // Level/job are feasibility gates, never a proxy for monetary value.
+      // Unknown full reward retains only the explicitly priced portion; an
+      // entirely unpriced reward cannot become an asserted zero-value quest.
+      const value = row => moneySort === 'net' ? row.net : moneySort === 'hourly' ? row.netPerHour : row.commonReward.value;
+      return Number(b.available)-Number(a.available) || knownDifference(value(a),value(b)) || knownDifference(a.commonReward.value,b.commonReward.value) || b.priority-a.priority || id(a.id).localeCompare(id(b.id));
+    }
     const priority = b.priority - a.priority;
     if (priority) return priority;
-    const knownDifference = (left, right) => left === null && right === null ? 0 : left === null ? 1 : right === null ? -1 : right - left;
-    if (goal === 'money') return knownDifference(a.netPerHour, b.netPerHour) || knownDifference(a.net, b.net) || b.knownPartialReward - a.knownPartialReward || n(b.quest.minLevel) - n(a.quest.minLevel);
     if (goal === 'exp') return knownDifference(a.expPerHour, b.expPerHour) || knownDifference(a.exp, b.exp) || n(b.quest.minLevel) - n(a.quest.minLevel);
     return knownDifference(a.netPerHour, b.netPerHour) || n(b.quest.minLevel) - n(a.quest.minLevel);
   });
