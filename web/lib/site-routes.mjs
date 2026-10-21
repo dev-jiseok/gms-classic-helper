@@ -1,0 +1,7 @@
+/** Stable feature URLs; old shared hash links remain readable. */
+export const FEATURE_PATHS=Object.freeze({today:'/',guides:'/guides',quests:'/quests',money:'/moneyQuests',expQuests:'/expQuests',training:'/training',codex:'/codex',items:'/items',monsters:'/monsters',maps:'/maps',npcs:'/npcs',market:'/market',owl:'/owl',trade:'/trade',shop:'/shop',party:'/party',messages:'/messages',nickname:'/nickname',tools:'/tools',calculator:'/calculator',accuracy:'/accuracy',hunt:'/hunt',exp:'/exp',skills:'/skills',gear:'/gear',buildnotes:'/buildnotes',crafting:'/crafting',scroll:'/scroll',dressing:'/dressing',route:'/route',timer:'/timer',order:'/order',chat:'/chat',liveTranslate:'/liveTranslate',megaphone:'/megaphone',citizenship:'/citizenship',pq:'/pq',start:'/start',errors:'/errors',events:'/events',ranking:'/ranking',settings:'/settings'});
+const paths=new Map(Object.entries(FEATURE_PATHS).map(([id,path])=>[path.toLowerCase(),id]));
+paths.set('/leveling','guides');paths.set('/news','events');paths.set('/nick','nickname');paths.set('/inbox','messages');paths.set('/vpn','start');paths.set('/money','money');paths.set('/home','today');
+export function routeForPath(pathname='/'){return paths.get(String(pathname).replace(/\/+$/,'').toLowerCase()||'/')??null;}
+export function routeForLocation(pathname='/',hash=''){const id=String(hash).replace(/^#/,'');return Object.hasOwn(FEATURE_PATHS,id)?id:routeForPath(pathname)??'today';}
+export function pathForRoute(id){return Object.hasOwn(FEATURE_PATHS,id)?FEATURE_PATHS[id]:'/';}

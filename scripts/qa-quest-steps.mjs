@@ -1,0 +1,35 @@
+import {chromium} from 'playwright-core';
+import assert from 'node:assert/strict';
+import {writeFile} from 'node:fs/promises';
+import {initialState} from '../web/lib/engine.mjs';
+import {questStepPlan} from '../web/lib/quest-steps.mjs';
+const origin=process.env.COMPASS_QA_ORIGIN??'http://127.0.0.1:5187';
+if(!/^http:\/\/127\.0\.0\.1:\d+$/.test(origin))throw Error('Local QA only');
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const checks=[],errors=[];
+try{
+ const context=await browser.newContext({viewport:{width:1440,height:1000},locale:'ko-KR'});
+ let saved={...initialState(),updatedAt:new Date().toISOString()},revision=0;
+ const response=await context.request.get(origin+'/api/game-data?kind=bundle&sets=quests,maps,npcs,portals');assert.equal(response.status(),200);const data=await response.json();
+ const quest=data.quests.find(q=>q.id==='80009'&&q.steps?.length)??data.quests.find(q=>q.steps?.some(s=>s.destinationMapId&&s.targetNpcId));assert.ok(quest,'actual collected quest steps must be connected before QA');
+ const first=questStepPlan(quest,data).find(s=>s.destination&&s.npc);assert.ok(first,'an actual linked NPC and destination fixture is required');
+ const from=data.portals.find(edge=>String(edge.toId)===String(first.destination.id)&&edge.fromId!==edge.toId&&!edge.requiresQuest&&!edge.requiresItem&&edge.portalType!=='transport'&&(edge.sourceId||edge.sourceUrl)&&data.maps.some(map=>String(map.id)===String(edge.fromId)))?.fromId??first.destination.id;
+ saved.profiles[0]={...saved.profiles[0],level:30,job:'fighter',currentJob:'fighter'};saved.activeProfile=saved.profiles[0].id;
+ const profileId=saved.activeProfile,done={};for(const q of data.quests)if(q.id!==quest.id)done[q.id]=true;
+ saved.completed={[profileId]:done};saved.questItineraries={[profileId]:{selectedIds:[quest.id],stepState:{},durations:{},startMapId:String(from)}};
+ const completedBefore=JSON.stringify(done);
+ await context.route('**/api/state',async route=>{if(route.request().method()==='PUT'){saved=route.request().postDataJSON().state;revision++;await route.fulfill({json:{revision}});}else await route.fulfill({json:{state:saved,revision}});});
+ const page=await context.newPage();page.setDefaultTimeout(15000);page.on('pageerror',error=>errors.push(error.message));
+ await page.goto(origin+'/#quests');await page.getByLabel('완료 숨기기',{exact:true}).uncheck();await page.getByLabel('내 레벨·현재 직업',{exact:true}).uncheck();await page.getByLabel('퀘스트 전체 검색',{exact:true}).fill(quest.id);
+ await page.locator('.catalog-entry-main').filter({hasText:quest.name}).first().click();
+ const dialog=page.locator('dialog'),guide=dialog.getByRole('region',{name:quest.name+' 원문 진행 단계',exact:true});await guide.waitFor();
+ await guide.getByLabel(quest.name+' 단계 경로 출발 맵',{exact:true}).selectOption(String(from));await guide.getByText(first.title,{exact:true}).waitFor();
+ assert.ok(!(await guide.innerText()).includes('<span'));checks.push('actual Cargo step order, plain descriptions, source links and NPC/map artwork are shown in quest detail');
+ const npcButton=guide.getByRole('button').filter({hasText:first.npc.name}).first();await npcButton.click();await dialog.getByRole('heading',{name:first.npc.name,exact:true}).first().waitFor();await dialog.getByRole('button',{name:'닫기',exact:true}).click();checks.push('step NPC opens the same canonical NPC detail');
+ await page.goto(origin+'/#money');await page.getByRole('button',{name:'진행·체크',exact:true}).click();
+ const planGuide=page.getByRole('region',{name:quest.name+' 원문 진행 단계',exact:true});await planGuide.getByRole('button',{name:/원문 진행 단계/}).click();await planGuide.getByText(first.title,{exact:true}).waitFor();
+ assert.ok((await planGuide.innerText()).includes('포털'));assert.equal(JSON.stringify(await page.evaluate(id=>JSON.parse(localStorage.getItem('maple-compass-v1')).completed[id],profileId)),completedBefore);checks.push('itinerary reads the same source steps and factual portal path without changing completion');
+ await planGuide.getByText(first.title,{exact:true}).scrollIntoViewIfNeeded();await page.waitForTimeout(800);await page.screenshot({path:'research/output/quest-steps-desktop.png'});
+ await page.setViewportSize({width:390,height:844});await planGuide.getByText(first.title,{exact:true}).scrollIntoViewIfNeeded();await page.waitForTimeout(300);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:'research/output/quest-steps-mobile.png'});checks.push('390px step guide and image links fit without horizontal overflow');
+ assert.deepEqual(errors,[]);const report={at:new Date().toISOString(),origin,quest:{id:quest.id,name:quest.name,steps:quest.steps.length},allCollectedSteps:data.quests.reduce((sum,q)=>sum+(q.steps?.length??0),0),checks,errors};await writeFile('research/output/quest-steps-qa.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+}finally{await browser.close();}

@@ -1,0 +1,724 @@
+{
+  "checkedAt": "2026-10-21T08:53:16.795097+00:00",
+  "scope": "Read-only primary source API/doc verification; no app edits; no authentication bypass; no claim of GG universal upstream identity",
+  "localCounts": {
+    "items": 7434,
+    "monsters": 102,
+    "maps": 320,
+    "npcs": 226,
+    "quests": 318,
+    "shops": 555,
+    "recipes": 348,
+    "portals": 536,
+    "drops": 158
+  },
+  "upstreams": [
+    {
+      "key": "mob-index",
+      "url": "https://maplestory.io/api/MCW/1/mob",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:47:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "470015",
+        "last-modified": "Tue, 20 Oct 2026 01:02:27 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 11334,
+      "sha256": "fc18470d77485f9494cd5cc6f187835f40e1c1ef0930eaece0fc077642b2c0f3",
+      "shape": "array",
+      "topKeys": [
+        "id",
+        "name",
+        "mobType",
+        "level",
+        "isBoss"
+      ],
+      "count": 101,
+      "requestedIds": [
+        {
+          "id": 10,
+          "name": "Ribbon Pig",
+          "mobType": "Unknown",
+          "level": 0,
+          "isBoss": false
+        },
+        {
+          "id": 2,
+          "name": "Snail",
+          "mobType": "Unknown",
+          "level": 0,
+          "isBoss": false
+        },
+        {
+          "id": 9,
+          "name": "Orange Mushroom",
+          "mobType": "Unknown",
+          "level": 0,
+          "isBoss": false
+        }
+      ]
+    },
+    {
+      "key": "item-index",
+      "url": "https://maplestory.io/api/MCW/1/item",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:50:47 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "488118",
+        "last-modified": "Mon, 19 Oct 2026 23:45:02 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 2698622,
+      "sha256": "c783c1181630a3f148a652dffb77f22a32e2e142f9adca06ee8ded554a1acc68",
+      "shape": "array",
+      "topKeys": [
+        "requiredJobs",
+        "requiredLevel",
+        "isCash",
+        "requiredGender",
+        "name",
+        "desc",
+        "id",
+        "typeInfo"
+      ],
+      "count": 7432
+    },
+    {
+      "key": "map-index",
+      "url": "https://maplestory.io/api/MCW/1/map",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:50:47 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "470241",
+        "last-modified": "Sat, 17 Oct 2026 01:58:14 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 32438,
+      "sha256": "221c194eef20ade43f815afbebb9972195010c80e47749ccf299be9df5027309",
+      "shape": "array",
+      "topKeys": [
+        "name",
+        "streetName",
+        "id"
+      ],
+      "count": 318
+    },
+    {
+      "key": "npc-index",
+      "url": "https://maplestory.io/api/MCW/1/npc",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:50:47 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "397352",
+        "last-modified": "Tue, 20 Oct 2026 01:02:34 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 11031,
+      "sha256": "1a4b8293296cc387433134d22b0f295e461af5df77dd1bbd5d3de8e1bb295c04",
+      "shape": "array",
+      "topKeys": [
+        "name",
+        "id"
+      ],
+      "count": 226
+    },
+    {
+      "key": "quest-index",
+      "url": "https://maplestory.io/api/MCW/1/quest",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:50:47 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "114497",
+        "last-modified": "Tue, 20 Oct 2026 01:02:29 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 29415,
+      "sha256": "fa33999d143c64f6e95dada057db07ea9b0e811b0f1f8e1d02fa90f51088b464",
+      "shape": "array",
+      "topKeys": [
+        "id",
+        "name",
+        "minLevel"
+      ],
+      "count": 316
+    },
+    {
+      "key": "mob2",
+      "url": "https://maplestory.io/api/MCW/1/mob/2",
+      "http": {
+        "status": 404,
+        "date": "Wed, 21 Oct 2026 08:47:43 GMT",
+        "content-type": "application/json",
+        "age": "316946",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 191,
+      "sha256": "01960f160e0f3ea35b7739c4034f9043664281e238e95c4eebe4b02152590b08",
+      "shape": "object",
+      "topKeys": [
+        "error",
+        "pending",
+        "complete",
+        "message"
+      ],
+      "error": "The requested endpoint GET /api/MCW/1/mob/2 does not exist"
+    },
+    {
+      "key": "mob9",
+      "url": "https://maplestory.io/api/MCW/1/mob/9",
+      "http": {
+        "status": 404,
+        "date": "Wed, 21 Oct 2026 08:47:43 GMT",
+        "content-type": "application/json",
+        "age": "317177",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 191,
+      "sha256": "0ccf10d2521d539097ea5d90dc469ead167004075cc2cc954807a3fb4b4595ab",
+      "shape": "object",
+      "topKeys": [
+        "error",
+        "pending",
+        "complete",
+        "message"
+      ],
+      "error": "The requested endpoint GET /api/MCW/1/mob/9 does not exist"
+    },
+    {
+      "key": "mob10",
+      "url": "https://maplestory.io/api/MCW/1/mob/10",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:47:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "114317",
+        "last-modified": "Tue, 20 Oct 2026 01:02:26 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 138,
+      "sha256": "32b1d805262ad2c3daf0956417169d8cc30e60378756de909854985e8d055f39",
+      "shape": "object",
+      "topKeys": [
+        "id",
+        "name",
+        "framebooks",
+        "foundAt"
+      ]
+    },
+    {
+      "key": "item1332007",
+      "url": "https://maplestory.io/api/MCW/1/item/1332007",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:47:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "450318",
+        "last-modified": "Tue, 20 Oct 2026 02:25:57 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 42549,
+      "sha256": "e1d4eaee02122de9769c7aaa583b52adb687859c07900d2188dafa2029adcdec",
+      "shape": "object",
+      "topKeys": [
+        "frameBooks",
+        "equipGroup",
+        "id",
+        "description",
+        "metaInfo",
+        "typeInfo"
+      ]
+    },
+    {
+      "key": "quest1009",
+      "url": "https://maplestory.io/api/MCW/1/quest/1009",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:47:44 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "109065",
+        "last-modified": "Tue, 20 Oct 2026 02:29:58 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 1524,
+      "sha256": "a87b7553858c6ca8815e2036006df5922364e8613ac1fee9152fc5de25deacf3",
+      "shape": "object",
+      "topKeys": [
+        "id",
+        "messages",
+        "name",
+        "area",
+        "areaName",
+        "demandSummary",
+        "questsAvailableOnComplete",
+        "rewardOnStart",
+        "rewardOnComplete",
+        "requirementToStart",
+        "requirementToComplete"
+      ]
+    },
+    {
+      "key": "map10000000",
+      "url": "https://maplestory.io/api/MCW/1/map/10000000",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:47:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "469984",
+        "last-modified": "Wed, 21 Oct 2026 04:29:26 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 186309,
+      "sha256": "112dc2ad9c574a71d16a893ac0dbcc37a272df24b8424ad0e73d53b30a48e753",
+      "shape": "object",
+      "topKeys": [
+        "backgroundMusic",
+        "isReturnMap",
+        "returnMap",
+        "portals",
+        "npcs",
+        "mobs",
+        "mobRate",
+        "isTown",
+        "isSwim",
+        "mapMark",
+        "miniMap",
+        "footholds",
+        "vrBounds",
+        "returnMapName",
+        "ladderRopes",
+        "name",
+        "streetName",
+        "id"
+      ]
+    },
+    {
+      "key": "npc1",
+      "url": "https://maplestory.io/api/MCW/1/npc/1",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:47:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "335577",
+        "last-modified": "Tue, 20 Oct 2026 02:29:37 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 967,
+      "sha256": "e856eb29443d76875bfb0bca6819fc46fb5697dca1bc24383872550605c0232c",
+      "shape": "object",
+      "topKeys": [
+        "dialogue",
+        "name",
+        "isShop",
+        "framebooks",
+        "id",
+        "isComponentNPC"
+      ]
+    },
+    {
+      "key": "wiki-siteinfo",
+      "url": "https://mapleclassic.wiki/api.php?action=query&meta=siteinfo&siprop=rightsinfo%7Cgeneral&format=json",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:23 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "0",
+        "cache-control": "private, must-revalidate, max-age=0"
+      },
+      "bytes": 2422,
+      "sha256": "e73d6f237035d0efc5eb27514846ae38d66570d17bdc41c4dcd9472b90d63333",
+      "shape": "object",
+      "topKeys": [
+        "batchcomplete",
+        "query"
+      ],
+      "rightsinfo": {
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "text": "Creative Commons Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "key": "wiki-mob2",
+      "url": "https://mapleclassic.wiki/api.php?action=cargoquery&tables=monsters&fields=id,name_en,level,hp,exp&where=id%3D2&limit=5&format=json",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:23 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "0",
+        "cache-control": "private, must-revalidate, max-age=0"
+      },
+      "bytes": 87,
+      "sha256": "0298a7a887c84343e632fa1daf1d690bffba7d1bdec633b3bcc22140ce0628dc",
+      "shape": "object",
+      "topKeys": [
+        "cargoquery"
+      ],
+      "sample": {
+        "id": "2",
+        "name en": "Snail",
+        "level": "1",
+        "hp": "45",
+        "exp": "2"
+      }
+    },
+    {
+      "key": "wiki-changes",
+      "url": "https://mapleclassic.wiki/api.php?action=query&list=recentchanges&rcprop=title%7Ctimestamp%7Cids&rclimit=3&format=json",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:50:47 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "0",
+        "cache-control": "private, must-revalidate, max-age=0"
+      },
+      "bytes": 561,
+      "sha256": "e8a0d50d54c7617ac65799a2fca3d23a2073951ddf353b048b0a997e9c7f816c",
+      "shape": "object",
+      "topKeys": [
+        "batchcomplete",
+        "continue",
+        "query"
+      ],
+      "supported": true,
+      "hasContinuation": true
+    },
+    {
+      "key": "cozy-prices",
+      "url": "https://cozy.markets/api/cozy-prices",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:22 GMT",
+        "content-type": "application/json",
+        "cache-control": "max-age=15, public",
+        "etag": "W/\"imLd4ObvX60__AofJk1BWX\""
+      },
+      "bytes": 368964,
+      "sha256": "8a62dde0e6ef5fad3ffc0a1f264d415979476f721e6b03e22460079aefe4db7d",
+      "shape": "object",
+      "topKeys": [
+        "cozy"
+      ],
+      "count": 1127,
+      "withLastSoldAt": 904,
+      "sourceUpdatedAt": "2026-10-21T08:44:37.708000+00:00",
+      "sampleIronOre": {
+        "item_id": 414,
+        "usual": 449.0,
+        "basis": "sold",
+        "listings": 1850,
+        "sales": 1018,
+        "listed_median": 499.0,
+        "sold_median": 449.0,
+        "last_sold": 399.0,
+        "last_sold_at": 1792572210.902,
+        "low": 199.0,
+        "low_at": 1792552320.274,
+        "low_stock": null,
+        "trend": "flat",
+        "trend_pct": -9
+      }
+    },
+    {
+      "key": "cozy-catalog",
+      "url": "https://cozy.markets/api/catalog",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:22 GMT",
+        "content-type": "application/json",
+        "cache-control": "max-age=15, public",
+        "etag": "W/\"UHw160PHt1Mi-PS7V3JUmI\""
+      },
+      "bytes": 1000588,
+      "sha256": "507c35eb43c7b75322f8f4bb5772549880149b69edc7d85f309f213ac5ce5027",
+      "shape": "object",
+      "topKeys": [
+        "items"
+      ],
+      "count": 5236,
+      "sampleIronOre": {
+        "id": 414,
+        "name": "Iron Ore",
+        "npc_price": 20,
+        "info": {
+          "type": "Etc",
+          "subtype": "Ore & Mineral",
+          "levelReq": 0,
+          "reqJob": null,
+          "stats": {
+            "price": 20
+          },
+          "iconKey": "4010001"
+        }
+      }
+    },
+    {
+      "key": "cozy-sightings",
+      "url": "https://cozy.markets/api/items/414/sightings?page=1&size=2&show=listed&sort=at&dir=desc",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:23 GMT",
+        "content-type": "application/json",
+        "cache-control": "max-age=15, public"
+      },
+      "bytes": 585,
+      "sha256": "cb787c3374025a6fdc00b17a9fae52677f5499d46122de8309ed63b8496d5f8f",
+      "shape": "object",
+      "topKeys": [
+        "rows",
+        "page",
+        "size",
+        "total",
+        "pages"
+      ],
+      "total": 2331,
+      "rowKeys": [
+        "at",
+        "qty",
+        "stock",
+        "price",
+        "unit_price",
+        "confirmed",
+        "sold",
+        "vs_fm",
+        "stats",
+        "shop",
+        "shop_title",
+        "channel",
+        "fm_room",
+        "map_name",
+        "map"
+      ],
+      "priceSample": {
+        "at": 1792570682.503,
+        "qty": 1,
+        "stock": 46,
+        "price": 475,
+        "unit_price": 475.0,
+        "confirmed": true,
+        "sold": false,
+        "stats": null
+      }
+    },
+    {
+      "key": "cozy-robots",
+      "url": "https://cozy.markets/robots.txt",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:50:47 GMT",
+        "content-type": "text/plain",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "last-modified": "Wed, 21 Oct 2026 05:05:27 GMT"
+      },
+      "bytes": 66,
+      "sha256": "4488e12ca26d441429b22b98f2e710aa867becd6af93799cfde65c3a58920a52"
+    },
+    {
+      "key": "mob-wz-canvas",
+      "url": "https://maplestory.io/api/wz/MCW/1/Mob/_Canvas",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:22 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "age": "317196",
+        "last-modified": "Wed, 21 Oct 2026 07:36:14 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 1308,
+      "sha256": "fc588f296eb7993cfd63746f596d16e4359e683e91f33c4f27ff92ee301b8adc",
+      "shape": "object",
+      "topKeys": [
+        "children",
+        "type"
+      ]
+    },
+    {
+      "key": "mob-wz2",
+      "url": "https://maplestory.io/api/wz/MCW/1/Mob/_Canvas/0000002.img",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:22 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "last-modified": "Wed, 21 Oct 2026 08:48:22 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 84,
+      "sha256": "a4f02bc8c5beab7e257f5087ffca92b7622fee35324d74f8509931482e42bdd3",
+      "shape": "object",
+      "topKeys": [
+        "children",
+        "type"
+      ],
+      "children": [
+        "die1",
+        "hit1",
+        "move",
+        "stand"
+      ]
+    },
+    {
+      "key": "mob-wz9",
+      "url": "https://maplestory.io/api/wz/MCW/1/Mob/_Canvas/0000009.img",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:48:22 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "last-modified": "Wed, 21 Oct 2026 08:48:22 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 84,
+      "sha256": "a4f02bc8c5beab7e257f5087ffca92b7622fee35324d74f8509931482e42bdd3",
+      "shape": "object",
+      "topKeys": [
+        "children",
+        "type"
+      ],
+      "children": [
+        "die1",
+        "hit1",
+        "move",
+        "stand"
+      ]
+    },
+    {
+      "key": "mob-wz2-frame",
+      "url": "https://maplestory.io/api/wz/MCW/1/Mob/_Canvas/0000002.img/stand/0",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:49:12 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "last-modified": "Wed, 21 Oct 2026 08:49:12 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 1551,
+      "sha256": "c2a97efead44647b3669fe48afdc7040b3d42eebaf6ffaf95b6c78ffaa7a8d8d",
+      "shape": "object",
+      "topKeys": [
+        "children",
+        "type",
+        "value"
+      ],
+      "canvasType": 12,
+      "pngDimensions": [
+        37,
+        26
+      ],
+      "pngSha256": "475805f2484520bb17ca65ad995bf51473124e07958723e0087f4c246b9c37f4"
+    },
+    {
+      "key": "mob-wz9-frame",
+      "url": "https://maplestory.io/api/wz/MCW/1/Mob/_Canvas/0000009.img/stand/0",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:49:12 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "last-modified": "Wed, 21 Oct 2026 08:49:12 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 3414,
+      "sha256": "671a988e3c97c26cefcc7af93b279b70dce32025247e206e2aa25f312c3901fe",
+      "shape": "object",
+      "topKeys": [
+        "children",
+        "type",
+        "value"
+      ],
+      "canvasType": 12,
+      "pngDimensions": [
+        63,
+        58
+      ],
+      "pngSha256": "af6fe26d71aecf96232709b159660a43789c0a9eef6a5dbe4c748db1d0ed3e0c"
+    },
+    {
+      "key": "mob2-render",
+      "url": "https://maplestory.io/api/MCW/1/mob/2/render/stand/0",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:49:12 GMT",
+        "content-type": "image/png",
+        "age": "108444",
+        "last-modified": "Tue, 20 Oct 2026 02:41:47 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 1380,
+      "sha256": "aa3ec1d58b94735c53fbdd9d20df41750b41c0ace2ae925d993f20ef263fa290"
+    },
+    {
+      "key": "mob9-render",
+      "url": "https://maplestory.io/api/MCW/1/mob/9/render/stand/0",
+      "http": {
+        "status": 404,
+        "date": "Wed, 21 Oct 2026 08:49:45 GMT",
+        "content-type": "application/json",
+        "age": "317299",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 221,
+      "sha256": "5c22948bcafc012b9341acc10eb87c29156962dc19fa916a9fcda219dfa2a6e5",
+      "shape": "object",
+      "topKeys": [
+        "error",
+        "pending",
+        "complete",
+        "message"
+      ]
+    },
+    {
+      "key": "mob2-move",
+      "url": "https://maplestory.io/api/MCW/1/mob/2/render/move/0",
+      "http": {
+        "status": 404,
+        "date": "Wed, 21 Oct 2026 08:49:45 GMT",
+        "content-type": "application/json",
+        "age": "317079",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 219,
+      "sha256": "672c1e1ff9208dabfdc6c183d1213d80362c1d4139548426662d3f3040d84258",
+      "shape": "object",
+      "topKeys": [
+        "error",
+        "pending",
+        "complete",
+        "message"
+      ]
+    },
+    {
+      "key": "mob9-animate",
+      "url": "https://maplestory.io/api/MCW/1/mob/9/render/animated/stand",
+      "http": {
+        "status": 200,
+        "date": "Wed, 21 Oct 2026 08:49:46 GMT",
+        "content-type": "image/gif",
+        "last-modified": "Wed, 21 Oct 2026 08:49:46 GMT",
+        "cache-control": "max-age=86400"
+      },
+      "bytes": 2613,
+      "sha256": "0d028f41b613a3dc040b335dc9dc739dd7e9f6a388bd05226e37847600d2dda8"
+    }
+  ],
+  "cozyDocumentationEvidence": "ev_5cb60c417ba70d4d9bea4ef9d0c6527830fa421e53aef338d467461cdbfe2c67",
+  "wikiLicense": {
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "source": "siteinfo rightsinfo and Main Page rel=license/footer"
+  },
+  "limitations": [
+    "Source is public client/community reference, not a Nexon server database.",
+    "Public API availability is not an unrestricted asset/database redistribution license.",
+    "GG bundle analysis is separate; equal IDs or names alone do not prove common API.",
+    "Snapshot timestamp is not an individual quote timestamp."
+  ],
+  "ggStaticSourceEvidence": {
+    "report": "output/gg-embedded-data-shapes-20261021.json",
+    "reaEvidence": [
+      "ev_47eec1404dc58216156b661098af3136a75d37c845f3868bc542c38e899c33f4",
+      "ev_0d8e15c61615457a70b29ec4ba3c74244502604da2abce72b596a0bda976188e"
+    ],
+    "method": "Static source literal transformation only, no bundle/bootstrap execution, no full dataset export",
+    "conclusion": "GG embedded static catalog declares MapleClassic Wiki / CC BY-NC-SA 4.0. Major Cargo table families match our direct Wiki collector. This does not prove IO or Cozy is the same upstream for all GG features."
+  }
+}

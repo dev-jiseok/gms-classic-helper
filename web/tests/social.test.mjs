@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {canReadPost,canReadRoom,validatePost,acceptPartyMember,priceOfCart} from '../lib/social.mjs';
+test('private posts never become shared merely because a room name matches',()=>{assert.equal(canReadPost({room:'our-party',ownerId:'A'},'B',true),false);assert.equal(canReadPost({room:'space-A',ownerId:'A'},'B',false),false);assert.equal(canReadPost({room:'space-A',ownerId:'A'},'B',true),true);});
+test('space access requires actual membership',()=>{assert.equal(canReadRoom('space','A',[{spaceId:'space',userId:'B'}]),false);assert.equal(canReadRoom('space','A',[{spaceId:'space',userId:'A'}]),true);});
+test('shop validates prices and individual stock',()=>{assert.throws(()=>validatePost({kind:'shop',payload:{title:'shop',items:[]}}));assert.throws(()=>validatePost({kind:'sell',payload:{title:'x',price:-1}}));const r=validatePost({kind:'shop',payload:{title:'shop',items:[{name:'ore',price:10,quantity:2}]}});assert.equal(r.payload.items[0].quantity,2);});
+test('party capacity cannot be exceeded and duplicate acceptance is idempotent',()=>{const p={capacity:2,members:[{userId:'A'}]};const joined=acceptPartyMember(p,{userId:'B'});assert.equal(joined.members.length,2);assert.equal(acceptPartyMember(joined,{userId:'B'}).members.length,2);assert.throws(()=>acceptPartyMember(joined,{userId:'C'}));});
+test('cart total clamps to real remaining stock',()=>{assert.equal(priceOfCart([{id:'a',price:10,quantity:2},{id:'b',price:20,quantity:5}],{a:999,b:-1}),20);});

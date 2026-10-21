@@ -1,0 +1,4180 @@
+{
+  "meta": {
+    "version": 1,
+    "verifiedAt": "2026-10-21",
+    "scope": "전체 공개 도감은 별도 public-catalog.json으로 제공. 이 파일은 직접 작성한 시작 안내와 선별 참조 자료입니다.",
+    "pricesLive": false,
+    "dropChancesKnown": false,
+    "license": "Original Korean editorial text; selected factual references attributed per record.",
+    "notes": [
+      "빈 배열·null은 미등록 또는 미확인 값을 뜻합니다.",
+      "커뮤니티 자료의 검증일은 조회일이며 게임 패치의 정확성을 보장하지 않습니다.",
+      "맵의 mobIds는 등록된 25종의 관계 일부로 전체 출현 몬스터 목록이 아닙니다."
+    ]
+  },
+  "sources": [
+    {
+      "id": "mapleclassic-wiki",
+      "name": "MapleClassic Wiki · MCW 커뮤니티 관찰",
+      "url": "https://mapleclassic.wiki/",
+      "license": "CC BY-NC-SA 4.0",
+      "note": "게임 사실 일부를 정규화. 제3자 글·전체 DB 복제 아님. 현재 서버에서 재확인 필요."
+    },
+    {
+      "id": "maplestory-io",
+      "name": "MapleStory.io · MCW/1 공개 메타데이터",
+      "url": "https://maplestory.io/api/MCW/1",
+      "note": "NPC 가격은 시장 시세와 다름."
+    }
+  ],
+  "monsters": [
+    {
+      "id": "snail",
+      "name": "달팽이",
+      "en": "Snail",
+      "level": 1,
+      "hp": 45,
+      "exp": 2,
+      "region": "메이플 아일랜드",
+      "mapIds": [
+        "snail-hunting-ground-i",
+        "snail-hunting-ground-iii",
+        "the-forest-north-of-ellinia",
+        "thicket-around-the-beach-ii",
+        "mushroom-garden-maple-island",
+        "the-field-west-of-amherst",
+        "west-domain-of-perion"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "snail-shell",
+        "bronze-ore",
+        "garnet-ore",
+        "arrows-for-bows",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "blue-snail",
+      "name": "파란 달팽이",
+      "en": "Blue Snail",
+      "level": 2,
+      "hp": 51,
+      "exp": 4,
+      "region": "메이플 아일랜드",
+      "mapIds": [
+        "snail-hunting-ground-iii",
+        "the-field-west-of-amherst",
+        "l-forest-i",
+        "west-domain-of-perion",
+        "the-blue-mushroom-forest"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "4000000",
+        "iron-ore",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Blue_Snail",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "shroom",
+      "name": "스포아",
+      "en": "Shroom",
+      "level": 3,
+      "hp": 62,
+      "exp": 6,
+      "region": "메이플 아일랜드",
+      "mapIds": [
+        "mushroom-garden-maple-island",
+        "the-field-west-of-amherst",
+        "mushroom-garden-victoria-island",
+        "l-forest-i"
+      ],
+      "dropItemIds": [
+        "mushroom-spore",
+        "arrows-for-bows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Shroom",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "red-snail",
+      "name": "빨간 달팽이",
+      "en": "Red Snail",
+      "level": 4,
+      "hp": 68,
+      "exp": 8,
+      "region": "메이플 아일랜드",
+      "mapIds": [
+        "the-field-west-of-amherst",
+        "mushroom-garden-victoria-island",
+        "west-rocky-mountain-iii",
+        "l-forest-i",
+        "east-rocky-mountain-v",
+        "snail-hunting-ground-iii",
+        "the-blue-mushroom-forest",
+        "west-domain-of-perion"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "red-snail-shell",
+        "silver-ore",
+        "arrows-for-bows",
+        "arrows-for-crossbows",
+        "wooden-sword"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Red_Snail",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "stump",
+      "name": "스텀프",
+      "en": "Stump",
+      "level": 5,
+      "hp": 133,
+      "exp": 10,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "the-tree-that-grew-ii",
+        "the-forest-north-of-ellinia",
+        "west-domain-of-perion",
+        "west-rocky-mountain-iii",
+        "l-forest-i"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "bronze-ore",
+        "arrows-for-bows",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Stump",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "slime",
+      "name": "슬라임",
+      "en": "Slime",
+      "level": 6,
+      "hp": 115,
+      "exp": 12,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "the-tree-that-grew-ii",
+        "the-forest-north-of-ellinia",
+        "damp-tree-forest",
+        "thicket-around-the-beach-ii",
+        "the-blue-mushroom-forest",
+        "dangerous-croko-i",
+        "l-forest-i",
+        "sleepy-dungeon-v"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "squishy-liquid",
+        "slime-bubble",
+        "orihalcon-ore",
+        "arrows-for-bows",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Slime",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "pig",
+      "name": "돼지",
+      "en": "Pig",
+      "level": 7,
+      "hp": 128,
+      "exp": 13,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "thicket-around-the-beach-ii",
+        "l-forest-i"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "pig-s-head",
+        "stiff-feather",
+        "leather",
+        "arrows-for-bows",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Pig",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "orange-mushroom",
+      "name": "주황버섯",
+      "en": "Orange Mushroom",
+      "level": 8,
+      "hp": 142,
+      "exp": 15,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "mushroom-garden-victoria-island",
+        "thicket-around-the-beach-ii",
+        "l-forest-i",
+        "mushroom-garden-maple-island",
+        "the-field-west-of-amherst"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "4000001",
+        "bronze-ore",
+        "arrows-for-bows",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Orange_Mushroom",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "ribbon-pig",
+      "name": "리본돼지",
+      "en": "Ribbon Pig",
+      "level": 10,
+      "hp": 172,
+      "exp": 19,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "l-forest-i"
+      ],
+      "dropItemIds": [
+        "pig-s-head",
+        "stiff-feather",
+        "leather",
+        "arrows-for-bows",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Ribbon_Pig",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "dark-stump",
+      "name": "다크 스텀프",
+      "en": "Dark Stump",
+      "level": 11,
+      "hp": 236,
+      "exp": 21,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "west-domain-of-perion",
+        "east-rocky-mountain-v",
+        "the-tree-that-grew-ii",
+        "west-rocky-mountain-iii",
+        "the-land-of-wild-boar-ii"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "garnet-ore",
+        "iron-ore",
+        "arrows-for-bows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Dark_Stump",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "octopus",
+      "name": "옥토퍼스",
+      "en": "Octopus",
+      "level": 12,
+      "hp": 191,
+      "exp": 23,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "damp-tree-forest"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "arrows-for-crossbows",
+        "fragment-of-magic"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Octopus",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "green-mushroom",
+      "name": "초록버섯",
+      "en": "Green Mushroom",
+      "level": 14,
+      "hp": 233,
+      "exp": 26,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "west-rocky-mountain-iii",
+        "west-domain-of-perion",
+        "l-forest-i"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "silver-ore",
+        "arrows-for-bows",
+        "arrows-for-crossbows",
+        "blue-potion",
+        "green-mushroom-cap",
+        "fragment-of-magic"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Green_Mushroom",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "bubbling",
+      "name": "버블링",
+      "en": "Bubbling",
+      "level": 15,
+      "hp": 259,
+      "exp": 28,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "line-1-area-1"
+      ],
+      "dropItemIds": [],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Bubbling",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "axe-stump",
+      "name": "엑스텀프",
+      "en": "Axe Stump",
+      "level": 17,
+      "hp": 371,
+      "exp": 32,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "the-forest-north-of-ellinia",
+        "the-land-of-wild-boar-ii",
+        "west-rocky-mountain-iii"
+      ],
+      "dropItemIds": [
+        "2000000",
+        "orihalcon-ore",
+        "firewood"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Axe_Stump",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "blue-mushroom",
+      "name": "파란버섯",
+      "en": "Blue Mushroom",
+      "level": 19,
+      "hp": 342,
+      "exp": 35,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "the-blue-mushroom-forest"
+      ],
+      "dropItemIds": [
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Blue_Mushroom",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "stirge",
+      "name": "스티지",
+      "en": "Stirge",
+      "level": 20,
+      "hp": 296,
+      "exp": 37,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "dangerous-steam"
+      ],
+      "dropItemIds": [
+        "stiff-feather",
+        "garnet-ore",
+        "arrows-for-crossbows"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Stirge",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "jr-necki",
+      "name": "주니어 네키",
+      "en": "Jr. Necki",
+      "level": 21,
+      "hp": 272,
+      "exp": 39,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "dangerous-croko-i",
+        "sleepy-dungeon-v",
+        "damp-tree-forest"
+      ],
+      "dropItemIds": [
+        "jr-necki-skin"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Jr._Necki",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "horny-mushroom",
+      "name": "뿔버섯",
+      "en": "Horny Mushroom",
+      "level": 22,
+      "hp": 403,
+      "exp": 41,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "ant-tunnel-iv",
+        "ant-tunnel-iii",
+        "dangerous-steam"
+      ],
+      "dropItemIds": [
+        "bronze-ore",
+        "arrows-for-bows",
+        "arrows-for-crossbows",
+        "blue-potion"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Horny_Mushroom",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "dark-axe-stump",
+      "name": "다크 엑스텀프",
+      "en": "Dark Axe Stump",
+      "level": 23,
+      "hp": 547,
+      "exp": 43,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "east-rocky-mountain-v",
+        "the-burnt-land-v",
+        "west-rocky-mountain-iii",
+        "damp-tree-forest",
+        "the-land-of-wild-boar-ii"
+      ],
+      "dropItemIds": [
+        "firewood"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Dark_Axe_Stump",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "zombie-mushroom",
+      "name": "좀비버섯",
+      "en": "Zombie Mushroom",
+      "level": 24,
+      "hp": 436,
+      "exp": 45,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "ant-tunnel-iii",
+        "ant-tunnel-iv",
+        "dangerous-steam"
+      ],
+      "dropItemIds": [
+        "charm-of-the-undead"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Zombie_Mushroom",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "wild-boar",
+      "name": "와일드보어",
+      "en": "Wild Boar",
+      "level": 25,
+      "hp": 510,
+      "exp": 46,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "the-land-of-wild-boar-ii"
+      ],
+      "dropItemIds": [
+        "leather"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Wild_Boar",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "evil-eye",
+      "name": "이블아이",
+      "en": "Evil Eye",
+      "level": 27,
+      "hp": 606,
+      "exp": 50,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "the-cave-of-evil-eye-iii"
+      ],
+      "dropItemIds": [],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Evil_Eye",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "iron-hog",
+      "name": "아이언 호그",
+      "en": "Iron Hog",
+      "level": 28,
+      "hp": 572,
+      "exp": 52,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "pig-park-ii",
+        "l-forest-i"
+      ],
+      "dropItemIds": [],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Iron_Hog",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "fire-boar",
+      "name": "파이어보어",
+      "en": "Fire Boar",
+      "level": 32,
+      "hp": 842,
+      "exp": 60,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "the-burnt-land-v",
+        "east-rocky-mountain-v"
+      ],
+      "dropItemIds": [
+        "leather",
+        "garnet-ore"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Fire_Boar",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    },
+    {
+      "id": "curse-eye",
+      "name": "커즈아이",
+      "en": "Curse Eye",
+      "level": 33,
+      "hp": 1001,
+      "exp": 63,
+      "region": "빅토리아 아일랜드",
+      "mapIds": [
+        "sleepy-dungeon-v"
+      ],
+      "dropItemIds": [],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Curse_Eye",
+      "confidence": "reference",
+      "verifiedAt": "2026-10-21",
+      "dataVersion": "MCW 0.9.0 커뮤니티 자료",
+      "dropChance": null
+    }
+  ],
+  "maps": [
+    {
+      "id": "snail-hunting-ground-i",
+      "name": "달팽이 사냥터 1",
+      "en": "Snail Hunting Ground I",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "snail"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail_Hunting_Ground_I",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "snail-hunting-ground-iii",
+      "name": "달팽이 사냥터 3",
+      "en": "Snail Hunting Ground III",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "snail",
+        "blue-snail",
+        "red-snail"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail_Hunting_Ground_III",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "mushroom-garden-maple-island",
+      "name": "버섯동산 (메이플 아일랜드)",
+      "en": "Mushroom Garden (Maple Island)",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "snail",
+        "shroom",
+        "orange-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Mushroom_Garden_(Maple_Island)",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "the-field-west-of-amherst",
+      "name": "암허스트 서쪽 사냥터",
+      "en": "The Field West of Amherst",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "snail",
+        "blue-snail",
+        "shroom",
+        "red-snail",
+        "orange-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/The_Field_West_of_Amherst",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "the-tree-that-grew-ii",
+      "name": "솟아오른 나무 2",
+      "en": "The Tree That Grew II",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "stump",
+        "slime",
+        "dark-stump"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/The_Tree_That_Grew_II",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "thicket-around-the-beach-ii",
+      "name": "해안가 풀숲 2",
+      "en": "Thicket Around the Beach II",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "snail",
+        "slime",
+        "pig",
+        "orange-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Thicket_Around_the_Beach_II",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "mushroom-garden-victoria-island",
+      "name": "버섯동산 (빅토리아)",
+      "en": "Mushroom Garden (Victoria Island)",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "shroom",
+        "red-snail",
+        "orange-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Mushroom_Garden_(Victoria_Island)",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "l-forest-i",
+      "name": "L숲 1",
+      "en": "L Forest I",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "blue-snail",
+        "shroom",
+        "red-snail",
+        "stump",
+        "slime",
+        "pig",
+        "orange-mushroom",
+        "ribbon-pig",
+        "green-mushroom",
+        "iron-hog"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/L_Forest_I",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "west-domain-of-perion",
+      "name": "페리온 서쪽령",
+      "en": "West Domain of Perion",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "snail",
+        "blue-snail",
+        "red-snail",
+        "stump",
+        "dark-stump",
+        "green-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/West_Domain_of_Perion",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "damp-tree-forest",
+      "name": "축축한 나무숲",
+      "en": "Damp Tree-Forest",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "slime",
+        "octopus",
+        "jr-necki",
+        "dark-axe-stump"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Damp_Tree-Forest",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "west-rocky-mountain-iii",
+      "name": "서쪽 바위산 3",
+      "en": "West Rocky Mountain III",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "red-snail",
+        "stump",
+        "dark-stump",
+        "green-mushroom",
+        "axe-stump",
+        "dark-axe-stump"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/West_Rocky_Mountain_III",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "line-1-area-1",
+      "name": "지하철 1호선 1구역",
+      "en": "Line 1 (Area 1)",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "bubbling"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Line_1_(Area_1)",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "the-forest-north-of-ellinia",
+      "name": "엘리니아 북쪽 숲",
+      "en": "The Forest North of Ellinia",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "snail",
+        "stump",
+        "slime",
+        "axe-stump"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/The_Forest_North_of_Ellinia",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "the-blue-mushroom-forest",
+      "name": "파란버섯의 숲",
+      "en": "The Blue Mushroom Forest",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "blue-snail",
+        "red-snail",
+        "slime",
+        "blue-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/The_Blue_Mushroom_Forest",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "dangerous-steam",
+      "name": "위험한 증기",
+      "en": "Dangerous Steam",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "stirge",
+        "horny-mushroom",
+        "zombie-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Dangerous_Steam",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "dangerous-croko-i",
+      "name": "위험한 크로코 1",
+      "en": "Dangerous Croko I",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "slime",
+        "jr-necki"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Dangerous_Croko_I",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "ant-tunnel-iv",
+      "name": "개미굴 4",
+      "en": "Ant Tunnel IV",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "horny-mushroom",
+        "zombie-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Ant_Tunnel_IV",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "east-rocky-mountain-v",
+      "name": "동쪽 바위산 5",
+      "en": "East Rocky Mountain V",
+      "region": "메이플 아일랜드",
+      "mobIds": [
+        "red-snail",
+        "dark-stump",
+        "dark-axe-stump",
+        "fire-boar"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/East_Rocky_Mountain_V",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "ant-tunnel-iii",
+      "name": "개미굴 3",
+      "en": "Ant Tunnel III",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "horny-mushroom",
+        "zombie-mushroom"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Ant_Tunnel_III",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "the-land-of-wild-boar-ii",
+      "name": "와일드보어의 땅 2",
+      "en": "The Land of Wild Boar II",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "dark-stump",
+        "axe-stump",
+        "dark-axe-stump",
+        "wild-boar"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/The_Land_of_Wild_Boar_II",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "the-cave-of-evil-eye-iii",
+      "name": "이블아이의 굴 3",
+      "en": "The Cave of Evil Eye III",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "evil-eye"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/The_Cave_of_Evil_Eye_III",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "pig-park-ii",
+      "name": "돼지의 공원 2",
+      "en": "Pig Park II",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "iron-hog"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Pig_Park_II",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "the-burnt-land-v",
+      "name": "불타버린 땅 5",
+      "en": "The Burnt Land V",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "dark-axe-stump",
+        "fire-boar"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/The_Burnt_Land_V",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    },
+    {
+      "id": "sleepy-dungeon-v",
+      "name": "슬리피 던전 5",
+      "en": "Sleepy Dungeon V",
+      "region": "빅토리아 아일랜드",
+      "mobIds": [
+        "slime",
+        "jr-necki",
+        "curse-eye"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Sleepy_Dungeon_V",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "note": "선별 등록된 몬스터 관계입니다. 이 맵의 전체 출현 목록은 아닙니다."
+    }
+  ],
+  "items": [
+    {
+      "id": "2000000",
+      "name": "빨간 포션",
+      "en": "Red Potion",
+      "category": "소비",
+      "level": null,
+      "jobs": [],
+      "npcSell": 5,
+      "sourceId": "maplestory-io",
+      "sourceUrl": "https://maplestory.io/api/MCW/1/item/2000000",
+      "verifiedAt": "2026-10-21",
+      "confidence": "verified"
+    },
+    {
+      "id": "4000000",
+      "name": "파란 달팽이의 껍질",
+      "en": "Blue Snail Shell",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Biggs%27s_Collection_of_Items",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference"
+    },
+    {
+      "id": "4000001",
+      "name": "주황버섯의 갓",
+      "en": "Orange Mushroom Cap",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Biggs%27s_Collection_of_Items",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference"
+    },
+    {
+      "id": "snail-shell",
+      "name": "달팽이의 껍질",
+      "en": "Snail Shell",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "red-snail-shell",
+      "name": "빨간 달팽이의 껍질",
+      "en": "Red Snail Shell",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Red_Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "mushroom-spore",
+      "name": "버섯의 포자",
+      "en": "Mushroom Spore",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Shroom",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "squishy-liquid",
+      "name": "물컹물컹한 액체",
+      "en": "Squishy Liquid",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Slime",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "slime-bubble",
+      "name": "슬라임의 방울",
+      "en": "Slime Bubble",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Slime",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "pig-s-head",
+      "name": "돼지의 머리",
+      "en": "Pig's Head",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Pig",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "stiff-feather",
+      "name": "뻣뻣한 깃털",
+      "en": "Stiff Feather",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Pig",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "leather",
+      "name": "동물의 가죽",
+      "en": "Leather",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Pig",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "bronze-ore",
+      "name": "청동의 원석",
+      "en": "Bronze Ore",
+      "category": "광석",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "garnet-ore",
+      "name": "가넷의 원석",
+      "en": "Garnet Ore",
+      "category": "광석",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "iron-ore",
+      "name": "강철의 원석",
+      "en": "Iron Ore",
+      "category": "광석",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Blue_Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "silver-ore",
+      "name": "은의 원석",
+      "en": "Silver Ore",
+      "category": "광석",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Red_Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "orihalcon-ore",
+      "name": "오리할콘의 원석",
+      "en": "Orihalcon Ore",
+      "category": "광석",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Slime",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "arrows-for-bows",
+      "name": "활전용 화살",
+      "en": "Arrows for Bows",
+      "category": "소비",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "arrows-for-crossbows",
+      "name": "석궁전용 화살",
+      "en": "Arrows for Crossbows",
+      "category": "소비",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "blue-potion",
+      "name": "파란 포션",
+      "en": "Blue Potion",
+      "category": "소비",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Green_Mushroom",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "wooden-sword",
+      "name": "목검",
+      "en": "Wooden Sword",
+      "category": "장비",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Red_Snail",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "green-mushroom-cap",
+      "name": "초록버섯의 갓",
+      "en": "Green Mushroom Cap",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Green_Mushroom",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "firewood",
+      "name": "장작",
+      "en": "Firewood",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Axe_Stump",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "fragment-of-magic",
+      "name": "마법의 조각",
+      "en": "Fragment of Magic",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Octopus",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "jr-necki-skin",
+      "name": "주니어 네키의 가죽",
+      "en": "Jr. Necki Skin",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Jr._Necki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    },
+    {
+      "id": "charm-of-the-undead",
+      "name": "죽은 자의 부적",
+      "en": "Charm of the Undead",
+      "category": "기타",
+      "level": null,
+      "jobs": [],
+      "npcSell": null,
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Zombie_Mushroom",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "gameId": null
+    }
+  ],
+  "quests": [
+    {
+      "id": "sam-suggestion",
+      "name": "샘의 제안",
+      "en": "Sam's Suggestion",
+      "minLevel": 1,
+      "region": "메이플 아일랜드",
+      "npc": "샘",
+      "exp": 30,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Sam%27s_Suggestion",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "todd-hunt",
+      "name": "토드의 사냥법",
+      "en": "Todd's How-to-Hunt",
+      "minLevel": 1,
+      "region": "메이플 아일랜드",
+      "npc": "토드",
+      "exp": 10,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Todd%27s_How-to-Hunt",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "roger-apple",
+      "name": "로저의 사과",
+      "en": "Roger's Apple (quest)",
+      "minLevel": 1,
+      "region": "메이플 아일랜드",
+      "npc": "로저",
+      "exp": 2,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Roger%27s_Apple_(quest)",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "letter-lucas",
+      "name": "루카스에게 편지 전달",
+      "en": "Letter for Lucas",
+      "minLevel": 2,
+      "region": "메이플 아일랜드",
+      "npc": "마리아",
+      "exp": null,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Letter_for_Lucas",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "lucas-reply",
+      "name": "루카스의 답장",
+      "en": "Lucas' Reply",
+      "minLevel": 2,
+      "region": "메이플 아일랜드",
+      "npc": "루카스",
+      "exp": 120,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "letter-lucas"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Lucas%27_Reply",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "mai-training",
+      "name": "마이의 수련",
+      "en": "Mai's Training",
+      "minLevel": 3,
+      "region": "메이플 아일랜드",
+      "npc": "마이",
+      "exp": 80,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Mai%27s_Training",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "mai-final",
+      "name": "마이의 마지막 수련",
+      "en": "Mai's Final Training",
+      "minLevel": 3,
+      "region": "메이플 아일랜드",
+      "npc": "마이",
+      "exp": 120,
+      "mesos": 150,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "mai-training"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Mai%27s_Final_Training",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "biggs-collection",
+      "name": "빅스의 아이템 수집",
+      "en": "Biggs's Collection of Items",
+      "minLevel": 3,
+      "region": "메이플 아일랜드",
+      "npc": "빅스",
+      "exp": 120,
+      "mesos": null,
+      "requirements": [
+        {
+          "itemId": "4000000",
+          "quantity": 10
+        },
+        {
+          "itemId": "4000001",
+          "quantity": 1
+        }
+      ],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Biggs%27s_Collection_of_Items",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "pio-recycling",
+      "name": "피오의 재활용품 수집",
+      "en": "Pio's Collecting Recycled Goods",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "피오",
+      "exp": 100,
+      "mesos": 150,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Pio%27s_Collecting_Recycled_Goods",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "rain-quiz-1",
+      "name": "레인의 메이플 퀴즈 1",
+      "en": "Rain's Maple Quiz 1",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "레인",
+      "exp": 40,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Rain%27s_Maple_Quiz_1",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "rain-quiz-2",
+      "name": "레인의 메이플 퀴즈 2",
+      "en": "Rain's Maple Quiz 2",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "레인",
+      "exp": 50,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "rain-quiz-1"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Rain%27s_Maple_Quiz_2",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "rain-quiz-3",
+      "name": "레인의 메이플 퀴즈 3",
+      "en": "Rain's Maple Quiz 3",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "레인",
+      "exp": 60,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "rain-quiz-2"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Rain%27s_Maple_Quiz_3",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "rain-quiz-4",
+      "name": "레인의 메이플 퀴즈 4",
+      "en": "Rain's Maple Quiz 4",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "레인",
+      "exp": 70,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "rain-quiz-3"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Rain%27s_Maple_Quiz_4",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "rain-quiz-5",
+      "name": "레인의 메이플 퀴즈 5",
+      "en": "Rain's Maple Quiz 5",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "레인",
+      "exp": 80,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "rain-quiz-4"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Rain%27s_Maple_Quiz_5",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "rain-quiz-6",
+      "name": "레인의 메이플 퀴즈 6",
+      "en": "Rain's Maple Quiz 6",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "레인",
+      "exp": 90,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "rain-quiz-5"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Rain%27s_Maple_Quiz_6",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    },
+    {
+      "id": "rain-quiz-7",
+      "name": "레인의 메이플 퀴즈 7",
+      "en": "Rain's Maple Quiz 7",
+      "minLevel": 5,
+      "region": "메이플 아일랜드",
+      "npc": "레인",
+      "exp": 100,
+      "mesos": null,
+      "requirements": [],
+      "rewardItems": [],
+      "prerequisiteIds": [
+        "rain-quiz-6"
+      ],
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Rain%27s_Maple_Quiz_7",
+      "verifiedAt": "2026-10-21",
+      "confidence": "reference",
+      "requirementsComplete": false,
+      "rewardsComplete": false,
+      "note": "입문 퀘스트 참고 자료. 미확인 요구 수량·보상·조건은 게임에서 확인하세요. 보상이 없는 것이 아니라 아직 등록하지 않은 항목일 수 있습니다."
+    }
+  ],
+  "guides": [
+    {
+      "id": "start-island",
+      "title": "Lv. 1–9: 섬 퀘스트를 동선에 묶기",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 1,
+      "maxLevel": 9,
+      "kind": "시작",
+      "summary": "처음부터 퀘스트와 처치 목표를 묶고 10레벨 전직을 준비합니다.",
+      "steps": [
+        "받을 수 있는 섬 퀘스트의 처치·수집 목표를 한 번에 확인하고 겹치는 목표부터 진행합니다.",
+        "퀘스트 재료를 팔기 전에 필요한 수량과 다음 퀘스트 연결을 확인합니다.",
+        "돈이 부족하면 재료 전부를 보관하기보다 앞으로 쓸 수량만 남기고 보급 예산을 확보합니다.",
+        "10레벨이 되면 진로의 전직관을 찾습니다. Classic World의 마법사 전직도 현재 참조 자료는 10레벨이며 과거 메이플의 8레벨 정보와 구분합니다."
+      ],
+      "priority": "먼저 확인",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Getting_started",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "warrior-first",
+      "title": "Lv. 10–29 전사: 명중과 근접 동선부터 안정화",
+      "jobs": [
+        "warrior",
+        "fighter",
+        "page",
+        "spearman"
+      ],
+      "minLevel": 10,
+      "maxLevel": 29,
+      "kind": "직업",
+      "summary": "1차 전직 후의 첫 장비·스킬·보급 우선순위를 확인합니다.",
+      "steps": [
+        "페리온의 주먹펴고 일어서에게 1차 전직을 확인합니다.",
+        "파워 스트라이크의 처치 타수와 슬래시 블래스트로 실제 함께 맞히는 수를 별도로 측정합니다.",
+        "빗나감이 잦으면 공격력만 올리기 전에 명중 장비·레벨 차이를 확인합니다.",
+        "HP 회복력 향상 3 → 최대 HP 증가, 최대 HP 증가 3 → 아이언 바디의 선행을 확인합니다. Classic 스킬 수치와 과거 빌드를 섞지 않습니다."
+      ],
+      "priority": "전직 후 먼저",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Warrior",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "magician-first",
+      "title": "Lv. 10–29 마법사: 물약 예산과 공격 주문 선택",
+      "jobs": [
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric"
+      ],
+      "minLevel": 10,
+      "maxLevel": 29,
+      "kind": "직업",
+      "summary": "1차 전직 후의 첫 장비·스킬·보급 우선순위를 확인합니다.",
+      "steps": [
+        "엘리니아의 하인즈에게 1차 전직을 확인합니다.",
+        "에너지 볼트와 매직 클로를 각각 실제 처치 타수·MP 소모로 비교합니다.",
+        "매직 클로는 에너지 볼트 1, 최대 MP 증가는 MP 회복력 향상 3, 매직 아머는 매직 가드 3이 선행입니다.",
+        "매직 가드 사용 전후의 HP·MP 물약비와 사망 위험을 함께 측정합니다. 안정적인 사냥이 가능한 MP 예비비를 먼저 남깁니다."
+      ],
+      "priority": "전직 후 먼저",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Magician",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "bowman-first",
+      "title": "Lv. 10–29 궁수: 사거리와 근접 대응을 함께 보기",
+      "jobs": [
+        "bowman",
+        "hunter",
+        "crossbowman"
+      ],
+      "minLevel": 10,
+      "maxLevel": 29,
+      "kind": "직업",
+      "summary": "1차 전직 후의 첫 장비·스킬·보급 우선순위를 확인합니다.",
+      "steps": [
+        "헤네시스의 헬레나에게 1차 전직을 확인합니다.",
+        "더블 샷은 애로우 블로우 1, 포커스는 아마존의 눈 3 선행을 확인합니다.",
+        "처치가 빠르더라도 몬스터가 바로 붙는 지형에서 넉백·재정렬에 드는 시간을 기록합니다.",
+        "현재 Classic의 크리티컬 샷 상한은 참조 자료에서 15입니다. 과거의 상한 20 빌드를 그대로 적용하지 않습니다."
+      ],
+      "priority": "전직 후 먼저",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Bowman",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "thief-first",
+      "title": "Lv. 10–29 도적: 표창·단검 진로와 보급 계획",
+      "jobs": [
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 10,
+      "maxLevel": 29,
+      "kind": "직업",
+      "summary": "1차 전직 후의 첫 장비·스킬·보급 우선순위를 확인합니다.",
+      "steps": [
+        "커닝시티의 다크로드에게 1차 전직을 확인합니다.",
+        "표창 진로라면 럭키 세븐과 아대, 단검 진로라면 더블 스탭의 실제 처치 속도를 기준으로 기록합니다.",
+        "킨 아이즈는 님블 바디 3, 다크 사이트는 디스오더 3 선행을 확인합니다.",
+        "왕복 재보급 시간을 사냥 기록에 포함합니다. 표창·MP·HP 비용이 서로 다른 무기 후보는 공격력만으로 비교하지 않습니다."
+      ],
+      "priority": "전직 후 먼저",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Thief",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "fighter-30",
+      "title": "Lv. 30+ 파이터: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "fighter"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "검과 도끼 중 지금 확보한 무기·시세·사냥 동작에 맞는 한 계열을 먼저 정합니다.",
+        "같은 계열 마스터리 3은 파이널 어택, 5는 부스터 선행입니다. 반대 무기 계열까지 동시에 투자하면 현재 주무기의 성장 SP가 줄어듭니다.",
+        "분노의 버프 효과와 포션 비용, 러시 사용으로 모이는 몬스터 수를 각각 측정합니다.",
+        "범위 공격으로 맞힌 수·접근 시간·혼잡도를 포함해 사냥 기록을 비교하고, 비싼 무기 교체 전에 실제 처치 타수 감소를 확인합니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Warrior",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "page-30",
+      "title": "Lv. 30+ 페이지: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "page"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "검과 둔기 중 현재 주무기·가격·공격 동작에 맞는 계열을 선택합니다.",
+        "무기 마스터리 3 → 파이널 어택, 마스터리 5 → 부스터의 선행을 맞춥니다.",
+        "위협과 러시를 써서 줄어드는 피격·이동 시간을 실제 사냥으로 확인합니다.",
+        "장래 전직을 가정해 현재 효율을 확정하지 않습니다. 출시 버전의 2차 도구와 내 사냥 기록으로 다음 장비를 고릅니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Warrior",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "spearman-30",
+      "title": "Lv. 30+ 스피어맨: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "spearman"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "창과 폴암을 같은 가격·강화 상태로 맞춰 실제 공격 동작과 처치 타수를 비교합니다.",
+        "각 무기 마스터리 3 → 해당 파이널 어택, 마스터리 5 → 해당 부스터의 선행을 따릅니다.",
+        "아이언 월을 사용한 파티와 솔로의 피격·물약비를 따로 기록합니다.",
+        "러시로 모으는 범위와 지형의 단차가 사냥 속도에 주는 영향을 확인합니다. 과거 하이브리드 빌드를 자동으로 최적이라고 취급하지 않습니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Warrior",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "firePoison-30",
+      "title": "Lv. 30+ 위자드 (불·독): 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "firePoison"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "불 공격과 독 공격의 실제 피해·상태 이상 적용 여부를 몬스터별로 먼저 확인합니다.",
+        "지속 피해를 기다리는 동안 다른 몬스터를 처리하는 동선과 마무리 시간을 기록합니다.",
+        "MP 이터 3 → 메디테이션의 선행을 확인하고, 텔레포트의 이동 이득과 MP 비용을 함께 비교합니다.",
+        "빠른 첫 타격만 기록하지 말고 독으로 끝나는 시간까지 포함해 경험치·물약·전리품을 측정합니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Magician",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "iceLightning-30",
+      "title": "Lv. 30+ 위자드 (썬·콜): 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "iceLightning"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "콜드 빔의 단일 대상 제어와 선더 볼트의 실제 명중 대상 수를 나눠 비교합니다.",
+        "범위 공격이 여러 층을 실제로 맞히는지, 얼음·번개가 통하지 않는 대상이 있는지 확인합니다.",
+        "MP 이터 3 → 메디테이션의 선행을 확인합니다. 텔레포트로 줄어드는 왕복 시간보다 MP 비용이 커지는지도 확인합니다.",
+        "피격을 줄여 물약비가 내려가는 효과와 처치 속도 개선을 사냥 기록에 따로 남깁니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Magician",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "cleric-30",
+      "title": "Lv. 30+ 클레릭: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "cleric"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "힐이 피해를 주는 언데드 여부를 도감과 게임에서 확인한 뒤 실제 맞히는 수를 측정합니다.",
+        "힐 5 → 인빈서블, 인빈서블 5 → 블레스 선행을 확인합니다.",
+        "파티원의 회복 수요와 파티 경험치 규칙을 확인하고 솔로·파티 기록을 분리합니다.",
+        "힐을 사용해도 MP 비용과 이동·대기 시간이 발생합니다. 물약 절약만으로 최고 효율이라고 단정하지 않습니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Magician",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "hunter-30",
+      "title": "Lv. 30+ 헌터: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "hunter"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "활 마스터리 3 → 파이널 어택, 마스터리 5 → 보우 부스터를 확인합니다.",
+        "애로우 봄의 범위에 실제 함께 맞는 몬스터 수와 가까이 붙었을 때의 대응 시간을 측정합니다.",
+        "소울 애로우 사용 전후의 화살·MP·왕복 보급 비용을 비교합니다.",
+        "아마존의 심판 등 현재 Classic 추가 스킬을 확인하고, 과거 소울 애로우·파이널 어택 빌드의 수치를 그대로 복사하지 않습니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Bowman",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "crossbowman-30",
+      "title": "Lv. 30+ 사수: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "crossbowman"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "석궁 마스터리 3 → 파이널 어택, 마스터리 5 → 크로스보우 부스터를 확인합니다.",
+        "아이언 애로우가 직선으로 여러 대상을 맞히기 좋은 지형과 몬스터 간격을 찾습니다.",
+        "긴 직선 맵이라도 걸어가는 시간·층 이동·경쟁을 포함하면 효율이 달라질 수 있어 전체 구간을 측정합니다.",
+        "활 매물과 석궁 매물은 호환되지 않습니다. 같은 주스탯이라도 사용할 수 있는 무기 계열을 먼저 필터링합니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Bowman",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "assassin-30",
+      "title": "Lv. 30+ 어쌔신: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "assassin"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "자벨린 마스터리 3 → 크리티컬 스로우, 5 → 자벨린 부스터의 선행을 맞춥니다.",
+        "크리티컬 리커버리 3 → 드레인의 선행과 실제 회복·물약 절감 효과를 확인합니다.",
+        "헤이스트를 써서 줄어드는 이동 시간과 파티원의 동선을 함께 기록합니다.",
+        "비싼 표창의 공격력 증가가 현재 몬스터 처치 타수를 줄이지 못하면, 무기·방어·물약 예산 후보와 비교한 뒤 구매합니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Thief",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "bandit-30",
+      "title": "Lv. 30+ 시프: 전직 후 사냥·스킬·장비",
+      "jobs": [
+        "bandit"
+      ],
+      "minLevel": 30,
+      "maxLevel": 100,
+      "kind": "직업",
+      "summary": "현재 출시된 2차 스킬과 실제 장비·보급 비용을 기준으로 비교합니다.",
+      "steps": [
+        "30레벨 전직관의 다음 여정과 교관 시험을 완료하고, 원하는 2차 진로를 확인한 뒤 전직합니다.",
+        "대거 마스터리 5 → 대거 부스터, 헤이스트 5 → 스틸의 선행을 맞춥니다.",
+        "새비지 블로우와 스틸의 현재 Classic 피해·범위를 실제 대상에게 확인합니다.",
+        "적에게 붙는 시간·접촉 피해·넉백을 포함해 시간당 경험치와 물약비를 측정합니다.",
+        "단검의 공격력·LUK·착용 조건과 실제 공격 동작을 함께 비교합니다. 표도 장비와 단도 장비를 한 순위로 섞지 않습니다.",
+        "3차 이후는 출시 버전에서 미개방입니다. 70레벨 도달을 현재 3차 전직 완료로 취급하지 않습니다."
+      ],
+      "priority": "2차 전직 우선",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Thief",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "quest-opportunity-cost",
+      "title": "돈퀘 선택: 보상보다 재료의 현재 가치를 먼저",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 1,
+      "maxLevel": 100,
+      "kind": "효율",
+      "summary": "재료를 팔 수 있는 가격·이동 시간·선행 비용을 포함해야 돈퀘 순위가 의미 있습니다.",
+      "steps": [
+        "같은 동선의 퀘스트를 묶고, 이미 완료한 선행과 지금 부족한 재료를 확인합니다.",
+        "보유한 재료도 시장에 팔 수 있는 기회비용을 반영합니다. NPC 판매가와 매물 호가·실제 거래가는 구분합니다.",
+        "선택·랜덤 보상 후보를 전부 얻는 것으로 더하지 않습니다. 보상 방식이 미확인이면 순이익을 확정하지 않습니다.",
+        "현재 사냥 순수익과 퀘스트 왕복 시간을 비교하고, 전직·시스템 해금 같은 성장 가치는 별도로 판단합니다."
+      ],
+      "priority": "보상 확인 후",
+      "when": "퀘스트를 위해 재료를 구매하거나 오래 이동하려 할 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Quests",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "crafting-no-waste",
+      "title": "제작 육성: 숙련 상한에서 재료 낭비 줄이기",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 10,
+      "maxLevel": 100,
+      "kind": "제작",
+      "summary": "제작은 장비 가격만이 아니라 제작 레벨·캐릭터 조건·숙련 낭비까지 확인합니다.",
+      "steps": [
+        "레시피의 제작 레벨, 캐릭터 레벨, NPC 위치와 재료·수수료를 먼저 확인합니다.",
+        "숙련 바가 캐릭터 레벨 제한 때문에 100%에 멈춰 있으면 추가 제작으로 숙련이 버려지는지 확인하고 멈춥니다.",
+        "목표 레벨까지 필요한 숙련을 기준으로 재료 비용에서 완성품의 판매 가치를 뺀 비용을 비교합니다.",
+        "촉매·확률·랜덤 추가 옵션의 가치를 모르면 최고 옵션 가격을 확정 수익으로 쓰지 않습니다."
+      ],
+      "priority": "재료 소비 전",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Crafting",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "shop-resident-discount",
+      "title": "NPC 구매: 시민권 할인과 구매 제한 먼저 확인",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 1,
+      "maxLevel": 100,
+      "kind": "생활",
+      "summary": "같은 물건도 주민 가격·시민권 단계·구매 제한에 따라 실제 구매 비용이 달라집니다.",
+      "steps": [
+        "NPC 판매 목록의 일반 가격과 주민 가격이 따로 있는지 확인합니다.",
+        "현재 시민권 단계와 수량 제한을 확인하고, 할인 가격에 바로 살 수 있다고 가정하지 않습니다.",
+        "다른 마을까지의 이동·배·택시 비용과 재보급 시간을 함께 비교합니다.",
+        "시장 매물보다 NPC 실구매가가 저렴한지 동일 아이템 ID·수량 단위로 비교합니다."
+      ],
+      "priority": "구매 전",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Citizenship",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "training-measurement",
+      "title": "사냥터 변경 전: 같은 길이로 두 곳 측정하기",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 1,
+      "maxLevel": 100,
+      "kind": "효율",
+      "summary": "경험치와 순수익에 이동·재보급을 포함하고, 희귀 드롭 한 번의 운에 휘둘리지 않습니다.",
+      "steps": [
+        "현재 사냥터와 후보를 각각 비슷한 시간 동안 측정합니다. 버프·파티·채널·장비 조건도 함께 남깁니다.",
+        "획득 메소와 물약·탄환·이동 비용을 따로 입력합니다. 지갑 증감에서 이미 빠진 비용을 다시 빼지 않습니다.",
+        "드롭 물품을 아직 팔지 않았다면 예상 평가액과 실제 판매 수익을 구분합니다.",
+        "희귀 아이템이 한 번 나온 기록만으로 안정적 기대 수익을 확정하지 않습니다. 기록 수·측정 시간과 표본 범위를 확인합니다."
+      ],
+      "priority": "새 사냥터 이동 전",
+      "when": "해당 레벨·진로에 도달했을 때",
+      "sourceId": "mapleclassic-wiki",
+      "sourceUrl": "https://mapleclassic.wiki/wiki/Training_guide",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "launch-first-steps",
+      "title": "출시 첫날: 전직·보상·거래 시간을 함께 준비",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 1,
+      "maxLevel": 100,
+      "kind": "시작",
+      "summary": "공식 출시 조건에 맞춰 전직과 계정 해금을 준비합니다.",
+      "steps": [
+        "정식 오픈은10월22일03:00 KST입니다. 전 직업1차는10레벨·2차는30레벨이며 현재 캐릭터 상한은100입니다.",
+        "계정 내 캐릭터가15레벨을 달성한 뒤24시간이 지나야 거래 기능이 열립니다. 당일 시장 구매를 전제로 장비 예산을 짜기 전에 남은 제한 시간을 확인합니다.",
+        "10레벨에는 운영자 이벤트 퀘스트를 받고, 사냥하며 잎사귀30개를 모아 계정 일일 보상을 확인합니다.",
+        "계정당 게임 캐릭터는3개입니다. 도우미 프로필 수와 게임의 캐릭터 슬롯 수는 다릅니다."
+      ],
+      "priority": "출시 후 먼저",
+      "when": "처음 시작하거나 신규 계정으로 접속할 때",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "launch-daily-leaves",
+      "title": "Lv.10+: 잎사귀30개 출석을 사냥에 묶기",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 10,
+      "maxLevel": 100,
+      "kind": "이벤트",
+      "summary": "누적 출석의 기간제 펫과 상점권을 확인합니다.",
+      "steps": [
+        "운영자에게 이벤트 퀘스트를 받고10레벨 이상 몬스터에게 Maple Leaf30개를 모아 교환합니다.",
+        "계정당 하루1회·누적14회 보상입니다. 하루를 빠져도 누적 횟수는 유지되며 초기화 시각은 공식 공지에 명시되지 않았습니다.",
+        "1회차 Snail펫은11월19일08:59 KST 만료·부활 불가입니다. 영구 펫으로 간주하거나 종료 이후 가치를 계산하지 않습니다.",
+        "4·12회차 일반 상점 개설권은7일입니다. 거래 제한 해제와 실제 상점 운영 일정을 함께 확인합니다."
+      ],
+      "priority": "일일 사냥 전",
+      "when": "10월22일03:00~11월19일08:59 KST 이벤트 기간의10레벨 이상 캐릭터",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "launch-trade-unlock",
+      "title": "Lv.15: 거래 해제까지24시간 계획",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 15,
+      "maxLevel": 100,
+      "kind": "거래",
+      "summary": "신규 계정 거래 제한을 고려해 사냥·보급·장비 구매를 준비합니다.",
+      "steps": [
+        "공식 조건은 계정의 캐릭터가15레벨에 도달한 뒤24시간입니다.15레벨 즉시 거래 가능이라고 가정하지 않습니다.",
+        "직접 달성 시각과 게임의 남은 제한 시간을 확인하고, 해제 전 보급은 NPC와 직접 얻을 수 있는 아이템을 우선 비교합니다.",
+        "도우미에 표시된 시세·저가 매물은 거래 제한을 자동 해제하거나 해당 매물의 재고를 보장하지 않습니다.",
+        "거래가 열리면 같은 옵션·단가·관찰 시각의 후보끼리 비교합니다."
+      ],
+      "priority": "15레벨 도달 시",
+      "when": "신규 계정이 시장 구매·판매를 계획할 때",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    },
+    {
+      "id": "launch-housing",
+      "title": "Lv.12+: 시민권과 계정 공유 주거 준비",
+      "jobs": [
+        "beginner",
+        "warrior",
+        "fighter",
+        "page",
+        "spearman",
+        "magician",
+        "firePoison",
+        "iceLightning",
+        "cleric",
+        "bowman",
+        "hunter",
+        "crossbowman",
+        "thief",
+        "assassin",
+        "bandit"
+      ],
+      "minLevel": 12,
+      "maxLevel": 100,
+      "kind": "생활",
+      "summary": "주민 등록 뒤 혜택과 주거 비용을 확인합니다.",
+      "steps": [
+        "12레벨부터 헤네시스 Arthur·커닝시티 Roxy의 주민 등록을 확인합니다.",
+        "시민권은 상점·택시·창고·일부 잡화 할인에 연결됩니다. 현재 마을·등급과 실제 NPC 가격을 확인합니다.",
+        "Visitor(2등급) 이상 시민은 주택 등록원에게 메소로 집을 살 수 있습니다. 헤네시스Bianca·커닝시티Scarlett이 담당합니다.",
+        "주택은 한 번에1개이며 같은 게임 계정의 캐릭터가 공유합니다. 각 캐릭터마다 별도 집을 사야 한다고 예산을 잡지 않습니다."
+      ],
+      "priority": "주민 등록 후",
+      "when": "시민권2등급 또는 주택 구입을 준비할 때",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference",
+      "note": "직접 작성한 조건별 안내입니다. 수치의 최적성은 내 장비·시세·혼잡도 실측에 따라 달라집니다."
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "beginner-1",
+      "job": "beginner",
+      "jobs": [
+        "beginner"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "warrior-1",
+      "job": "warrior",
+      "jobs": [
+        "warrior"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "warrior-10",
+      "job": "warrior",
+      "jobs": [
+        "warrior"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "warrior-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "fighter-1",
+      "job": "fighter",
+      "jobs": [
+        "fighter"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "fighter-10",
+      "job": "fighter",
+      "jobs": [
+        "fighter"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "warrior-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "fighter-30",
+      "job": "fighter",
+      "jobs": [
+        "fighter"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "fighter-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "page-1",
+      "job": "page",
+      "jobs": [
+        "page"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "page-10",
+      "job": "page",
+      "jobs": [
+        "page"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "warrior-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "page-30",
+      "job": "page",
+      "jobs": [
+        "page"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "page-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "spearman-1",
+      "job": "spearman",
+      "jobs": [
+        "spearman"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "spearman-10",
+      "job": "spearman",
+      "jobs": [
+        "spearman"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "warrior-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "spearman-30",
+      "job": "spearman",
+      "jobs": [
+        "spearman"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "spearman-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "magician-1",
+      "job": "magician",
+      "jobs": [
+        "magician"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "magician-10",
+      "job": "magician",
+      "jobs": [
+        "magician"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "magician-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "firePoison-1",
+      "job": "firePoison",
+      "jobs": [
+        "firePoison"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "firePoison-10",
+      "job": "firePoison",
+      "jobs": [
+        "firePoison"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "magician-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "firePoison-30",
+      "job": "firePoison",
+      "jobs": [
+        "firePoison"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "firePoison-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "iceLightning-1",
+      "job": "iceLightning",
+      "jobs": [
+        "iceLightning"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "iceLightning-10",
+      "job": "iceLightning",
+      "jobs": [
+        "iceLightning"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "magician-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "iceLightning-30",
+      "job": "iceLightning",
+      "jobs": [
+        "iceLightning"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "iceLightning-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "cleric-1",
+      "job": "cleric",
+      "jobs": [
+        "cleric"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "cleric-10",
+      "job": "cleric",
+      "jobs": [
+        "cleric"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "magician-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "cleric-30",
+      "job": "cleric",
+      "jobs": [
+        "cleric"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "cleric-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bowman-1",
+      "job": "bowman",
+      "jobs": [
+        "bowman"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bowman-10",
+      "job": "bowman",
+      "jobs": [
+        "bowman"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "bowman-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "hunter-1",
+      "job": "hunter",
+      "jobs": [
+        "hunter"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "hunter-10",
+      "job": "hunter",
+      "jobs": [
+        "hunter"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "bowman-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "hunter-30",
+      "job": "hunter",
+      "jobs": [
+        "hunter"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "hunter-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "crossbowman-1",
+      "job": "crossbowman",
+      "jobs": [
+        "crossbowman"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "crossbowman-10",
+      "job": "crossbowman",
+      "jobs": [
+        "crossbowman"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "bowman-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "crossbowman-30",
+      "job": "crossbowman",
+      "jobs": [
+        "crossbowman"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "crossbowman-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "thief-1",
+      "job": "thief",
+      "jobs": [
+        "thief"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "thief-10",
+      "job": "thief",
+      "jobs": [
+        "thief"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "thief-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "assassin-1",
+      "job": "assassin",
+      "jobs": [
+        "assassin"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "assassin-10",
+      "job": "assassin",
+      "jobs": [
+        "assassin"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "thief-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "assassin-30",
+      "job": "assassin",
+      "jobs": [
+        "assassin"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "assassin-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bandit-1",
+      "job": "bandit",
+      "jobs": [
+        "bandit"
+      ],
+      "level": 1,
+      "title": "섬 퀘스트와 첫 전직 준비",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "start-island",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bandit-10",
+      "job": "bandit",
+      "jobs": [
+        "bandit"
+      ],
+      "level": 10,
+      "title": "1차 전직·기본 사냥 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "thief-first",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bandit-30",
+      "job": "bandit",
+      "jobs": [
+        "bandit"
+      ],
+      "level": 30,
+      "title": "2차 진로·스킬·무기 확인",
+      "summary": "현재 진로와 필요한 선행을 확인하고 실제 게임에서 진행하세요.",
+      "guideId": "bandit-30",
+      "sourceId": "mapleclassic-wiki",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "beginner-launch-first-steps",
+      "job": "beginner",
+      "jobs": [
+        "beginner"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "beginner-launch-daily-leaves",
+      "job": "beginner",
+      "jobs": [
+        "beginner"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "beginner-launch-housing",
+      "job": "beginner",
+      "jobs": [
+        "beginner"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "beginner-launch-trade-unlock",
+      "job": "beginner",
+      "jobs": [
+        "beginner"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "warrior-launch-first-steps",
+      "job": "warrior",
+      "jobs": [
+        "warrior"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "warrior-launch-daily-leaves",
+      "job": "warrior",
+      "jobs": [
+        "warrior"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "warrior-launch-housing",
+      "job": "warrior",
+      "jobs": [
+        "warrior"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "warrior-launch-trade-unlock",
+      "job": "warrior",
+      "jobs": [
+        "warrior"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "fighter-launch-first-steps",
+      "job": "fighter",
+      "jobs": [
+        "fighter"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "fighter-launch-daily-leaves",
+      "job": "fighter",
+      "jobs": [
+        "fighter"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "fighter-launch-housing",
+      "job": "fighter",
+      "jobs": [
+        "fighter"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "fighter-launch-trade-unlock",
+      "job": "fighter",
+      "jobs": [
+        "fighter"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "page-launch-first-steps",
+      "job": "page",
+      "jobs": [
+        "page"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "page-launch-daily-leaves",
+      "job": "page",
+      "jobs": [
+        "page"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "page-launch-housing",
+      "job": "page",
+      "jobs": [
+        "page"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "page-launch-trade-unlock",
+      "job": "page",
+      "jobs": [
+        "page"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "spearman-launch-first-steps",
+      "job": "spearman",
+      "jobs": [
+        "spearman"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "spearman-launch-daily-leaves",
+      "job": "spearman",
+      "jobs": [
+        "spearman"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "spearman-launch-housing",
+      "job": "spearman",
+      "jobs": [
+        "spearman"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "spearman-launch-trade-unlock",
+      "job": "spearman",
+      "jobs": [
+        "spearman"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "magician-launch-first-steps",
+      "job": "magician",
+      "jobs": [
+        "magician"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "magician-launch-daily-leaves",
+      "job": "magician",
+      "jobs": [
+        "magician"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "magician-launch-housing",
+      "job": "magician",
+      "jobs": [
+        "magician"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "magician-launch-trade-unlock",
+      "job": "magician",
+      "jobs": [
+        "magician"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "firePoison-launch-first-steps",
+      "job": "firePoison",
+      "jobs": [
+        "firePoison"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "firePoison-launch-daily-leaves",
+      "job": "firePoison",
+      "jobs": [
+        "firePoison"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "firePoison-launch-housing",
+      "job": "firePoison",
+      "jobs": [
+        "firePoison"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "firePoison-launch-trade-unlock",
+      "job": "firePoison",
+      "jobs": [
+        "firePoison"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "iceLightning-launch-first-steps",
+      "job": "iceLightning",
+      "jobs": [
+        "iceLightning"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "iceLightning-launch-daily-leaves",
+      "job": "iceLightning",
+      "jobs": [
+        "iceLightning"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "iceLightning-launch-housing",
+      "job": "iceLightning",
+      "jobs": [
+        "iceLightning"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "iceLightning-launch-trade-unlock",
+      "job": "iceLightning",
+      "jobs": [
+        "iceLightning"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "cleric-launch-first-steps",
+      "job": "cleric",
+      "jobs": [
+        "cleric"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "cleric-launch-daily-leaves",
+      "job": "cleric",
+      "jobs": [
+        "cleric"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "cleric-launch-housing",
+      "job": "cleric",
+      "jobs": [
+        "cleric"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "cleric-launch-trade-unlock",
+      "job": "cleric",
+      "jobs": [
+        "cleric"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bowman-launch-first-steps",
+      "job": "bowman",
+      "jobs": [
+        "bowman"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bowman-launch-daily-leaves",
+      "job": "bowman",
+      "jobs": [
+        "bowman"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bowman-launch-housing",
+      "job": "bowman",
+      "jobs": [
+        "bowman"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bowman-launch-trade-unlock",
+      "job": "bowman",
+      "jobs": [
+        "bowman"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "hunter-launch-first-steps",
+      "job": "hunter",
+      "jobs": [
+        "hunter"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "hunter-launch-daily-leaves",
+      "job": "hunter",
+      "jobs": [
+        "hunter"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "hunter-launch-housing",
+      "job": "hunter",
+      "jobs": [
+        "hunter"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "hunter-launch-trade-unlock",
+      "job": "hunter",
+      "jobs": [
+        "hunter"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "crossbowman-launch-first-steps",
+      "job": "crossbowman",
+      "jobs": [
+        "crossbowman"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "crossbowman-launch-daily-leaves",
+      "job": "crossbowman",
+      "jobs": [
+        "crossbowman"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "crossbowman-launch-housing",
+      "job": "crossbowman",
+      "jobs": [
+        "crossbowman"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "crossbowman-launch-trade-unlock",
+      "job": "crossbowman",
+      "jobs": [
+        "crossbowman"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "thief-launch-first-steps",
+      "job": "thief",
+      "jobs": [
+        "thief"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "thief-launch-daily-leaves",
+      "job": "thief",
+      "jobs": [
+        "thief"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "thief-launch-housing",
+      "job": "thief",
+      "jobs": [
+        "thief"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "thief-launch-trade-unlock",
+      "job": "thief",
+      "jobs": [
+        "thief"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "assassin-launch-first-steps",
+      "job": "assassin",
+      "jobs": [
+        "assassin"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "assassin-launch-daily-leaves",
+      "job": "assassin",
+      "jobs": [
+        "assassin"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "assassin-launch-housing",
+      "job": "assassin",
+      "jobs": [
+        "assassin"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "assassin-launch-trade-unlock",
+      "job": "assassin",
+      "jobs": [
+        "assassin"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bandit-launch-first-steps",
+      "job": "bandit",
+      "jobs": [
+        "bandit"
+      ],
+      "level": 1,
+      "title": "공식 출시 조건과 신규 계정 거래 제한",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-first-steps",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bandit-launch-daily-leaves",
+      "job": "bandit",
+      "jobs": [
+        "bandit"
+      ],
+      "level": 10,
+      "title": "일일 잎사귀30개와 기간제 보상 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-daily-leaves",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bandit-launch-housing",
+      "job": "bandit",
+      "jobs": [
+        "bandit"
+      ],
+      "level": 12,
+      "title": "시민권·할인·계정 공유 주거 준비",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-housing",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    },
+    {
+      "id": "bandit-launch-trade-unlock",
+      "job": "bandit",
+      "jobs": [
+        "bandit"
+      ],
+      "level": 15,
+      "title": "15레벨 도달 뒤24시간 거래 제한 확인",
+      "summary": "공식 출시 공지의 조건과 게임 내 진행 상태를 확인하세요.",
+      "guideId": "launch-trade-unlock",
+      "sourceId": "nexon-official",
+      "sourceUrl": "https://www.nexon.com/maplestory/news/general/46506/grand-launch-release-notes",
+      "verifiedAt": "2026-10-21",
+      "confidence": "editorial-with-factual-reference"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+'use client';
+import { useCompass } from './context';
+import { Button, Card } from './components';
+export function SyncConflict(){const {conflict,resolveConflict}=useCompass();if(!conflict)return null;function backup(){const blob=new Blob([JSON.stringify(conflict.local,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='maple-compass-before-sync.json';a.click();URL.revokeObjectURL(url);}return <aside className="sync-conflict" role="alert"><Card title="다른 기기에서도 기록이 바뀌었어요"><p>현재 기기의 기록은 브라우저에 보관되어 있어요. 백업 후 계정에 남길 기록을 선택할 수 있습니다.</p><div className="button-row"><Button variant="secondary" onClick={backup}>현재 기록 백업</Button><Button onClick={()=>resolveConflict('remote')}>계정의 최신 기록 사용</Button><Button variant="secondary" onClick={()=>resolveConflict('local')}>현재 기기의 기록 사용</Button></div></Card></aside>;}

@@ -1,0 +1,7 @@
+{
+  "name": "rea-environment-fixture",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js"
+}

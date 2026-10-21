@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1792552364275,
+      "tag": "0000_freezing_wallow",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1792557401563,
+      "tag": "0001_faulty_layla_miller",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792559114639,
+      "tag": "0002_strange_mimic",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1792563287436,
+      "tag": "0003_faulty_cammi",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1792563660471,
+      "tag": "0004_chubby_shocker",
+      "breakpoints": true
+    }
+  ]
+}

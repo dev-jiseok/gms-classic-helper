@@ -1,0 +1,50 @@
+import {chromium} from 'playwright-core';
+import assert from 'node:assert/strict';
+import {writeFile} from 'node:fs/promises';
+import {initialState} from '../web/lib/engine.mjs';
+const origin=process.env.COMPASS_QA_ORIGIN??'http://127.0.0.1:5187';
+if(!/^http:\/\/127\.0\.0\.1:\d+$/.test(origin))throw Error('Local QA only');
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const errors=[],checks=[];
+try {
+ const context=await browser.newContext({viewport:{width:1440,height:1000},locale:'ko-KR'});
+ let saved={...initialState(),updatedAt:new Date().toISOString(),hunts:[{id:'unknown-income-qa',profileId:'fighter',map:'미확인 전리품 검증',at:new Date().toISOString(),minutes:10,exp:100,mesoDelta:100,potions:0,travel:0,loot:999,lootMode:'itemized',lootItems:[{itemId:'4010001',quantity:2,recordedUnitPrice:null}]}]},revision=0;
+ await context.route('**/api/state',async route=>{
+   if(route.request().method()==='PUT'){saved=route.request().postDataJSON().state;revision++;await route.fulfill({json:{revision}});}
+   else await route.fulfill({json:{state:saved,revision}});
+ });
+ const page=await context.newPage();page.setDefaultTimeout(15000);page.on('pageerror',error=>errors.push(error.message));
+ await page.goto(origin+'/#hunt');
+ const table=page.locator('table').filter({has:page.getByRole('columnheader',{name:'기록 당시 메소/h',exact:true})});
+ await table.getByText('수익 확인 필요',{exact:true}).waitFor();assert.ok((await table.innerText()).includes('600'));
+ checks.push('unknown itemized value keeps EXP but never becomes zero or stale aggregate income');
+ await page.getByText('지난 사냥을 합계로 직접 기록',{exact:true}).click();
+ await page.getByLabel('사냥터',{exact:true}).fill('비용 미확인 수동 기록 QA');
+ await page.getByLabel('획득 경험치',{exact:true}).fill('400');
+ await page.getByRole('button',{name:'사냥 기록 저장',exact:true}).click();
+ await page.waitForFunction(()=>JSON.parse(localStorage.getItem('maple-compass-v1')).hunts[0].map==='비용 미확인 수동 기록 QA');
+ const manual=await page.evaluate(()=>JSON.parse(localStorage.getItem('maple-compass-v1')).hunts[0]);
+ assert.equal(manual.mesoDelta,null);assert.equal(manual.potions,null);assert.equal(manual.loot,null);assert.equal(manual.travel,null);
+ checks.push('manual summary entry retains blank cash and costs as unknown values');
+ await page.locator('.account-button').click();
+ await page.getByLabel('현재 레벨',{exact:true}).fill('15');
+ await page.getByLabel('현재 인기도 · 모르면 빈칸',{exact:true}).fill('-10');
+ await page.getByLabel('실제 현재 전직 · 선택',{exact:true}).selectOption('warrior');
+ await page.getByRole('button',{name:'프로필 저장',exact:true}).click();
+ await page.waitForFunction(()=>JSON.parse(localStorage.getItem('maple-compass-v1')).profiles[0].fame===-10);
+ await page.reload();await page.waitForFunction(()=>document.querySelector('.app-footer')?.textContent.includes('계정'));
+ await page.locator('.account-button').click();
+ assert.equal(await page.getByLabel('현재 인기도 · 모르면 빈칸',{exact:true}).inputValue(),'-10');
+ assert.equal(await page.getByLabel('실제 현재 전직 · 선택',{exact:true}).inputValue(),'warrior');
+ await page.getByRole('button',{name:'닫기',exact:true}).click();checks.push('explicit current job and negative or unknown fame persist independently of career target');
+ await page.goto(origin+'/#market');await page.getByRole('button',{name:'연결·갱신',exact:true}).click();
+ await page.getByText('이력 저장소 연결됨',{exact:true}).waitFor();
+ assert.ok((await page.locator('body').innerText()).includes('공급원의 최신 실제 관찰'));
+ checks.push('durable market history status shows actual source time separately');
+ await page.setViewportSize({width:390,height:844});await page.locator('.account-button').click();
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.screenshot({path:'research/output/improvements-mobile.png',fullPage:true});
+ checks.push('390px profile and market status fit without horizontal overflow');
+ assert.deepEqual(errors,[]);
+ const report={at:new Date().toISOString(),origin,checks,errors};await writeFile('research/output/improvements-qa.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+} finally {await browser.close();}

@@ -1,0 +1,668 @@
+[
+  {
+    "status": 200,
+    "raw": {
+      "id": 1009,
+      "name": "Mai's Training",
+      "requirementToStart": {
+        "id": 1009,
+        "jobs": [
+          0
+        ],
+        "levelMinimum": 3,
+        "quests": [
+          {
+            "id": 1006,
+            "state": 2
+          }
+        ],
+        "npcId": 11,
+        "state": 0
+      },
+      "requirementToComplete": {
+        "id": 1009,
+        "mobs": [
+          {
+            "count": 10,
+            "id": 3
+          },
+          {
+            "count": 10,
+            "id": 4
+          },
+          {
+            "count": 5,
+            "id": 5
+          }
+        ],
+        "npcId": 11,
+        "state": 1
+      },
+      "rewardOnStart": {
+        "id": 1009,
+        "state": 0
+      },
+      "rewardOnComplete": {
+        "id": 1009,
+        "exp": 80,
+        "items": [
+          {
+            "id": 2010002,
+            "count": 10,
+            "potentialGrade": "normal"
+          }
+        ],
+        "state": 1
+      }
+    },
+    "fetchedAt": "2026-10-21T07:18:25.556Z",
+    "sourceUrl": "https://maplestory.io/api/MCW/1/quest/1009",
+    "nodes": {
+      "Check/0": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "job",
+            "lvmin",
+            "npc",
+            "quest"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:07.590Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/1009.img/Check/0"
+      },
+      "Check/1": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "mob",
+            "npc"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:08.297Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/1009.img/Check/1"
+      },
+      "Act/1": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "exp",
+            "item",
+            "nextQuest"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:08.797Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/1009.img/Act/1"
+      }
+    },
+    "rewardItems": [
+      {
+        "position": 0,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/1009.img/Act/1/item/0",
+        "fieldNames": [
+          "count",
+          "id",
+          "potentialGrade"
+        ],
+        "fields": {
+          "id": 2010002
+        }
+      }
+    ],
+    "rewardItemsScanned": true
+  },
+  {
+    "status": 200,
+    "raw": {
+      "id": 10002,
+      "name": "Jane and the Mushroom",
+      "requirementToStart": {
+        "id": 10002,
+        "levelMinimum": 20,
+        "npcId": 103,
+        "state": 0
+      },
+      "requirementToComplete": {
+        "id": 10002,
+        "mobs": [
+          {
+            "count": 30,
+            "id": 16
+          },
+          {
+            "count": 30,
+            "id": 19
+          }
+        ],
+        "items": [
+          {
+            "count": 15,
+            "id": 4000016
+          },
+          {
+            "count": 15,
+            "id": 4000019
+          }
+        ],
+        "npcId": 103,
+        "state": 1
+      },
+      "rewardOnStart": {
+        "id": 10002,
+        "state": 0
+      },
+      "rewardOnComplete": {
+        "id": 10002,
+        "exp": 1610,
+        "items": [
+          {
+            "id": 2043001,
+            "count": 1
+          },
+          {
+            "id": 2043101,
+            "count": 1
+          },
+          {
+            "id": 2044401,
+            "count": 1
+          },
+          {
+            "id": 2044501,
+            "count": 1
+          },
+          {
+            "id": 2044601,
+            "count": 1
+          },
+          {
+            "id": 2044701,
+            "count": 1
+          },
+          {
+            "id": 4000016,
+            "count": -15
+          },
+          {
+            "id": 4000019,
+            "count": -15
+          },
+          {
+            "id": 2043201,
+            "count": 1
+          },
+          {
+            "id": 2043301,
+            "count": 1
+          },
+          {
+            "id": 2043701,
+            "count": 1
+          },
+          {
+            "id": 2043801,
+            "count": 1
+          },
+          {
+            "id": 2044001,
+            "count": 1
+          },
+          {
+            "id": 2044101,
+            "count": 1
+          },
+          {
+            "id": 2044201,
+            "count": 1
+          },
+          {
+            "id": 2044301,
+            "count": 1
+          }
+        ],
+        "meso": 658,
+        "state": 1
+      }
+    },
+    "fetchedAt": "2026-10-21T07:18:29.067Z",
+    "sourceUrl": "https://maplestory.io/api/MCW/1/quest/10002",
+    "nodes": {
+      "Check/0": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "lvmin",
+            "npc"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:24.661Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Check/0"
+      },
+      "Check/1": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "item",
+            "mob",
+            "npc"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:25.094Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Check/1"
+      },
+      "Act/1": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "exp",
+            "item",
+            "money"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:25.621Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1"
+      }
+    },
+    "rewardItems": [
+      {
+        "position": 0,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/0",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2043001,
+          "prop": 1
+        }
+      },
+      {
+        "position": 1,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/1",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2043101,
+          "prop": 1
+        }
+      },
+      {
+        "position": 10,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/10",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044401,
+          "prop": 1
+        }
+      },
+      {
+        "position": 11,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/11",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044501,
+          "prop": 1
+        }
+      },
+      {
+        "position": 12,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/12",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044601,
+          "prop": 1
+        }
+      },
+      {
+        "position": 13,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/13",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044701,
+          "prop": 1
+        }
+      },
+      {
+        "position": 14,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/14",
+        "fieldNames": [
+          "count",
+          "id"
+        ],
+        "fields": {
+          "id": 4000016
+        }
+      },
+      {
+        "position": 15,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/15",
+        "fieldNames": [
+          "count",
+          "id"
+        ],
+        "fields": {
+          "id": 4000019
+        }
+      },
+      {
+        "position": 2,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/2",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2043201,
+          "prop": 1
+        }
+      },
+      {
+        "position": 3,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/3",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2043301,
+          "prop": 1
+        }
+      },
+      {
+        "position": 4,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/4",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2043701,
+          "prop": 1
+        }
+      },
+      {
+        "position": 5,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/5",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2043801,
+          "prop": 1
+        }
+      },
+      {
+        "position": 6,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/6",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044001,
+          "prop": 1
+        }
+      },
+      {
+        "position": 7,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/7",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044101,
+          "prop": 1
+        }
+      },
+      {
+        "position": 8,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/8",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044201,
+          "prop": 1
+        }
+      },
+      {
+        "position": 9,
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/10002.img/Act/1/item/9",
+        "fieldNames": [
+          "count",
+          "id",
+          "prop"
+        ],
+        "fields": {
+          "id": 2044301,
+          "prop": 1
+        }
+      }
+    ],
+    "rewardItemsScanned": true
+  },
+  {
+    "status": 200,
+    "raw": {
+      "id": 1002,
+      "name": "Roger's Apple",
+      "requirementToStart": {
+        "id": 1002,
+        "jobs": [
+          0
+        ],
+        "levelMinimum": 1,
+        "npcId": 3,
+        "state": 0
+      },
+      "requirementToComplete": {
+        "id": 1002,
+        "items": [
+          {
+            "id": 2010000
+          }
+        ],
+        "npcId": 3,
+        "state": 1
+      },
+      "rewardOnStart": {
+        "id": 1002,
+        "state": 0
+      },
+      "rewardOnComplete": {
+        "id": 1002,
+        "state": 1
+      }
+    },
+    "fetchedAt": "2026-10-21T07:18:23.377Z",
+    "sourceUrl": "https://maplestory.io/api/MCW/1/quest/1002",
+    "nodes": {
+      "Check/0": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "job",
+            "lvmin",
+            "npc",
+            "startscript"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:23:59.973Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/1002.img/Check/0"
+      },
+      "Check/1": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "endscript",
+            "item",
+            "npc"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:03.465Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/1002.img/Check/1"
+      },
+      "Act/1": {
+        "status": 200,
+        "raw": {
+          "children": [],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:24:04.028Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/1002.img/Act/1"
+      }
+    },
+    "rewardItems": []
+  },
+  {
+    "status": 200,
+    "raw": {
+      "id": 506018,
+      "name": "Asking After Athena Pierce",
+      "rewardOnStart": {
+        "id": 506018,
+        "state": 0
+      },
+      "rewardOnComplete": {
+        "id": 506018,
+        "exp": 4095,
+        "items": [
+          {
+            "id": 2000003,
+            "count": 8
+          }
+        ],
+        "meso": 716,
+        "state": 1
+      },
+      "requirementToStart": {
+        "id": 506018,
+        "levelMinimum": 12,
+        "quests": [
+          {
+            "id": 80117,
+            "state": 2
+          }
+        ],
+        "npcId": 235,
+        "state": 0
+      },
+      "requirementToComplete": {
+        "id": 506018,
+        "levelMinimum": 32,
+        "npcId": 221,
+        "state": 1
+      }
+    },
+    "fetchedAt": "2026-10-21T07:19:14.083Z",
+    "sourceUrl": "https://maplestory.io/api/MCW/1/quest/506018",
+    "nodes": {
+      "Check/0": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "citizenshipGrade",
+            "citizenshipTown",
+            "lvmin",
+            "npc",
+            "quest"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:30:44.651Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/506018.img/Check/0"
+      },
+      "Check/1": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "lvmin",
+            "npc"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:30:45.407Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/506018.img/Check/1"
+      },
+      "Act/1": {
+        "status": 200,
+        "raw": {
+          "children": [
+            "citizenshipContr",
+            "exp",
+            "item",
+            "money"
+          ],
+          "type": 13
+        },
+        "fetchedAt": "2026-10-21T07:30:46.156Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/506018.img/Act/1"
+      }
+    },
+    "rewardItems": [],
+    "additionalChecks": [
+      {
+        "stage": "start",
+        "key": "citizenshipGrade",
+        "status": 200,
+        "raw": {
+          "children": [],
+          "type": 4,
+          "value": 5
+        },
+        "fetchedAt": "2026-10-21T07:34:40.034Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/506018.img/Check/0/citizenshipGrade"
+      },
+      {
+        "stage": "start",
+        "key": "citizenshipTown",
+        "status": 200,
+        "raw": {
+          "children": [],
+          "type": 4,
+          "value": 1
+        },
+        "fetchedAt": "2026-10-21T07:34:40.790Z",
+        "sourceUrl": "https://maplestory.io/api/wz/MCW/1/Quest/QuestData/506018.img/Check/0/citizenshipTown"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2966 @@
+{
+  "date": "2026-10-21",
+  "target": "https://xn--bj0bv7uo4la196f.com",
+  "scope": "Retained REA browser/DOM/network mapping plus three bounded public GET probes; no app changes, authenticated data, authentication bypass or database replication. Root live shipped-JS analysis is separate.",
+  "retainedEvidence": {
+    "bundlePath": "research/output/site-comparison-2026-10-21.evidence.json",
+    "bundleSHA256": "c484d0273d2f93060f1ca43524df749c0c7316979e2a5ef6e51b880511372c6f",
+    "recordsTotal": 37,
+    "ggRecords": 11,
+    "ggEvidenceIds": [
+      "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+      "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+      "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+      "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+      "ev_50fba1ba729908872ca450b981b98b902df8baf18e40a3f037aba887816670cd",
+      "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+      "ev_619e761bc92eafa95c01a33019034bc687ab906fa5e2a383d6f1497556cfcf9b",
+      "ev_67ffa3280512f2f0330034210c8a6bf85b18f6b207df3e796d56b60d2ad839ef",
+      "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+      "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+      "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447"
+    ],
+    "networkResponseBodiesRetained": false,
+    "networkHeaderValuesRetained": false,
+    "reaBundleImportValidated": true,
+    "note": "Imported37 canonical Evidence records into REA. Browser scenario Evidence cannot be projected with inspect_analysis_view; complete exported records were read directly."
+  },
+  "sourceDisclosures": [
+    {
+      "id": "wiki-damage",
+      "statement": "원컷 계산 화면이 MapleClassic Wiki Damage 문서를 공식의 출처로 표시한다.",
+      "status": "observed-ui-source-disclosure",
+      "sourceUrls": [
+        "https://mapleclassic.wiki/wiki/Damage",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"
+      ],
+      "evidence": {
+        "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+        "stepIndex": 5,
+        "page": "https://xn--bj0bv7uo4la196f.com/calculator",
+        "domBytes": 82712,
+        "domSHA256": "14bbe8a030be79cdca9def4697b84a5382773629b8b4dce0dba1bd218cf9fe66"
+      }
+    },
+    {
+      "id": "wiki-quest",
+      "statement": "퀘스트 상세가 MapleClassic Wiki의 해당 퀘스트와 CC BY-NC-SA 4.0 링크를 출처로 제공한다.",
+      "status": "observed-ui-source-disclosure",
+      "sourceUrls": [
+        "https://mapleclassic.wiki/wiki/Shumi's_Lost_Sack_of_Cash",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"
+      ],
+      "evidence": {
+        "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+        "stepIndex": 3,
+        "page": "https://xn--bj0bv7uo4la196f.com/moneyQuests?id=Shumi%27s+Lost+Sack+of+Cash",
+        "domBytes": 73974,
+        "domSHA256": "b9cd1f5abbf8aedd96a7d4f70864c07e92b9a283c0a8f713dbf18a670edc976c"
+      }
+    },
+    {
+      "id": "wiki-client-skills",
+      "statement": "스킬 화면이 Wiki와 테스트 클라이언트 확인 자료를 근거로 밝히며, 미리보기는 클라이언트 이펙트에서 만들었다고 설명한다.",
+      "status": "observed-ui-source-disclosure",
+      "sourceUrls": [
+        "https://mapleclassic.wiki/"
+      ],
+      "evidence": {
+        "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+        "stepIndex": 2,
+        "page": "https://xn--bj0bv7uo4la196f.com/skills",
+        "domBytes": 40969,
+        "domSHA256": "d660c580734a596ced1dc7fe7bb2d9ea3b7f4d435ef2e74301523fbf0a55f5a4"
+      }
+    },
+    {
+      "id": "own-price-collector",
+      "statement": "시세 방법 패널은 자체 수집기가 게임 화면에서 읽은 확성기와 자체 거래소의 장비 매물을 출처로 밝힌다. 공통 외부 가격 API를 출처로 밝힌 증거는 없다.",
+      "status": "observed-ui-source-disclosure",
+      "sourceUrls": [
+        "https://xn--bj0bv7uo4la196f.com/market"
+      ],
+      "evidence": {
+        "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+        "stepIndex": 2,
+        "page": "https://xn--bj0bv7uo4la196f.com/market",
+        "domBytes": 110676,
+        "domSHA256": "faf301f33f298b77cb68d1b12f1b9f7fcf30678fd70ddc9c8f1dc3cf1c12931f"
+      }
+    }
+  ],
+  "apis": [
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/stats/hit",
+      "path": "/api/stats/hit",
+      "query": {},
+      "method": "POST",
+      "role": "방문 통계 전송",
+      "roleEvidenceScope": "ping/204. 데이터 공급원 목록에서는 제외",
+      "statuses": [
+        204
+      ],
+      "observationCount": 14,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 117,
+          "transactionId": "request-37",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 325,
+          "transactionId": "request-103",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 544,
+          "transactionId": "request-200",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 145,
+          "transactionId": "request-56",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 344,
+          "transactionId": "request-105",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 604,
+          "transactionId": "request-200",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 241,
+          "transactionId": "request-76",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 1
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 216,
+          "transactionId": "request-100",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 1
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 571,
+          "transactionId": "request-188",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 196,
+          "transactionId": "request-67",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 123,
+          "transactionId": "request-41",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 266,
+          "transactionId": "request-100",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 2
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 141,
+          "transactionId": "request-42",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 2
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 172,
+          "transactionId": "request-53",
+          "status": 204,
+          "resourceType": "ping",
+          "stepIndex": 2
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/auth",
+      "path": "/api/auth",
+      "query": {},
+      "method": "GET",
+      "role": "로그인 상태 관련 요청",
+      "roleEvidenceScope": "공개 화면에서도 호출. 사용자 응답 본문은 수집하지 않음",
+      "statuses": [
+        200
+      ],
+      "observationCount": 30,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 124,
+          "transactionId": "request-39",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 128,
+          "transactionId": "request-35",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 321,
+          "transactionId": "request-102",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 327,
+          "transactionId": "request-105",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 548,
+          "transactionId": "request-199",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 550,
+          "transactionId": "request-202",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 143,
+          "transactionId": "request-54",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 149,
+          "transactionId": "request-58",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 337,
+          "transactionId": "request-104",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 342,
+          "transactionId": "request-107",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 600,
+          "transactionId": "request-199",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 602,
+          "transactionId": "request-202",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 173,
+          "transactionId": "request-74",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 182,
+          "transactionId": "request-78",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 461,
+          "transactionId": "request-182",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 4
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 463,
+          "transactionId": "request-185",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 4
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 212,
+          "transactionId": "request-98",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 1
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 215,
+          "transactionId": "request-102",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 1
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 518,
+          "transactionId": "request-187",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 524,
+          "transactionId": "request-190",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 794,
+          "transactionId": "request-294",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 798,
+          "transactionId": "request-297",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 193,
+          "transactionId": "request-65",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 194,
+          "transactionId": "request-69",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 117,
+          "transactionId": "request-39",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 119,
+          "transactionId": "request-43",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 243,
+          "transactionId": "request-98",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 2
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 265,
+          "transactionId": "request-102",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 2
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 121,
+          "transactionId": "request-40",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 123,
+          "transactionId": "request-44",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/data-overrides",
+      "path": "/api/data-overrides",
+      "query": {},
+      "method": "GET",
+      "role": "기준 자료에 적용하는 보정값 후보",
+      "roleEvidenceScope": "이름·페이지 로드 시 공통 호출로부터의 추론. 응답 본문 미보존",
+      "statuses": [
+        200
+      ],
+      "observationCount": 15,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 126,
+          "transactionId": "request-36",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 329,
+          "transactionId": "request-111",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 554,
+          "transactionId": "request-203",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 147,
+          "transactionId": "request-55",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 334,
+          "transactionId": "request-108",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 608,
+          "transactionId": "request-205",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 180,
+          "transactionId": "request-75",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 465,
+          "transactionId": "request-186",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 4
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 223,
+          "transactionId": "request-99",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 1
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 525,
+          "transactionId": "request-192",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 804,
+          "transactionId": "request-298",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 168,
+          "transactionId": "request-66",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 112,
+          "transactionId": "request-40",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 247,
+          "transactionId": "request-99",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 2
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 127,
+          "transactionId": "request-41",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/version",
+      "path": "/api/version",
+      "query": {},
+      "method": "GET",
+      "role": "클라이언트 버전 확인 후보",
+      "roleEvidenceScope": "이름·페이지 공통 호출로부터의 추론. 응답 본문 미보존",
+      "statuses": [
+        200
+      ],
+      "observationCount": 15,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 130,
+          "transactionId": "request-38",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 323,
+          "transactionId": "request-104",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 546,
+          "transactionId": "request-201",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 139,
+          "transactionId": "request-57",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 346,
+          "transactionId": "request-106",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 606,
+          "transactionId": "request-201",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 176,
+          "transactionId": "request-77",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 466,
+          "transactionId": "request-184",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 4
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 222,
+          "transactionId": "request-101",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 1
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 516,
+          "transactionId": "request-189",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 796,
+          "transactionId": "request-296",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 195,
+          "transactionId": "request-68",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 125,
+          "transactionId": "request-42",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 264,
+          "transactionId": "request-101",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 2
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 125,
+          "transactionId": "request-43",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/prices?live=1&limit=20&after=0",
+      "path": "/api/prices",
+      "query": {
+        "live": [
+          "1"
+        ],
+        "limit": [
+          "20"
+        ],
+        "after": [
+          "0"
+        ]
+      },
+      "method": "GET",
+      "role": "전체 시세표와 아이템별 시세·실시간 목록",
+      "roleEvidenceScope": "가격 화면 및 상세를 여는 동안 관측. 원시 JSON schema 미확인",
+      "statuses": [
+        200
+      ],
+      "observationCount": 2,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 308,
+          "transactionId": "request-101",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 120,
+          "transactionId": "request-36",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/prices",
+      "path": "/api/prices",
+      "query": {},
+      "method": "GET",
+      "role": "전체 시세표와 아이템별 시세·실시간 목록",
+      "roleEvidenceScope": "가격 화면 및 상세를 여는 동안 관측. 원시 JSON schema 미확인",
+      "statuses": [
+        200
+      ],
+      "observationCount": 3,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 329,
+          "transactionId": "request-102",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 167,
+          "transactionId": "request-59",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 116,
+          "transactionId": "request-37",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/prices?item=2040801",
+      "path": "/api/prices",
+      "query": {
+        "item": [
+          "2040801"
+        ]
+      },
+      "method": "GET",
+      "role": "전체 시세표와 아이템별 시세·실시간 목록",
+      "roleEvidenceScope": "가격 화면 및 상세를 여는 동안 관측. 원시 JSON schema 미확인",
+      "statuses": [
+        200
+      ],
+      "observationCount": 2,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 382,
+          "transactionId": "request-149",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 188,
+          "transactionId": "request-82",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 1
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/item-sources?ids=2040801",
+      "path": "/api/item-sources",
+      "query": {
+        "ids": [
+          "2040801"
+        ]
+      },
+      "method": "GET",
+      "role": "아이템 획득 출처 후보",
+      "roleEvidenceScope": "시세 상세의 획득 출처 패널과 함께 관측. 원시 JSON schema 미확인",
+      "statuses": [
+        200
+      ],
+      "observationCount": 2,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 384,
+          "transactionId": "request-148",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 178,
+          "transactionId": "request-81",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 1
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/item-icon?id=99000002",
+      "path": "/api/item-icon",
+      "query": {
+        "id": [
+          "99000002"
+        ]
+      },
+      "method": "GET",
+      "role": "아이템 이미지 응답",
+      "roleEvidenceScope": "resource_type:image로 관측",
+      "statuses": [
+        502
+      ],
+      "observationCount": 2,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 464,
+          "transactionId": "request-155",
+          "status": 502,
+          "resourceType": "image",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 266,
+          "transactionId": "request-89",
+          "status": 502,
+          "resourceType": "image",
+          "stepIndex": 1
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/item-icon?id=99000001",
+      "path": "/api/item-icon",
+      "query": {
+        "id": [
+          "99000001"
+        ]
+      },
+      "method": "GET",
+      "role": "아이템 이미지 응답",
+      "roleEvidenceScope": "resource_type:image로 관측",
+      "statuses": [
+        502
+      ],
+      "observationCount": 3,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 466,
+          "transactionId": "request-156",
+          "status": 502,
+          "resourceType": "image",
+          "stepIndex": 3
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 296,
+          "transactionId": "request-99",
+          "status": 502,
+          "resourceType": "image",
+          "stepIndex": 1
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 264,
+          "transactionId": "request-88",
+          "status": 502,
+          "resourceType": "image",
+          "stepIndex": 1
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/item-icon?id=5230000",
+      "path": "/api/item-icon",
+      "query": {
+        "id": [
+          "5230000"
+        ]
+      },
+      "method": "GET",
+      "role": "아이템 이미지 응답",
+      "roleEvidenceScope": "resource_type:image로 관측",
+      "statuses": [
+        200
+      ],
+      "observationCount": 2,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 618,
+          "transactionId": "request-207",
+          "status": 200,
+          "resourceType": "image",
+          "stepIndex": 5
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 158,
+          "transactionId": "request-39",
+          "status": 200,
+          "resourceType": "image",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/marketplace?kind=party&sort=latest&status=open&limit=6",
+      "path": "/api/marketplace",
+      "query": {
+        "kind": [
+          "party"
+        ],
+        "sort": [
+          "latest"
+        ],
+        "status": [
+          "open"
+        ],
+        "limit": [
+          "6"
+        ]
+      },
+      "method": "GET",
+      "role": "공개 파티/아이템 게시물 목록",
+      "roleEvidenceScope": "홈의 두 게시판과 query kind/정렬/상태/limit를 함께 관측",
+      "statuses": [
+        200
+      ],
+      "observationCount": 1,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 171,
+          "transactionId": "request-62",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/marketplace?kind=item&sort=latest&status=open",
+      "path": "/api/marketplace",
+      "query": {
+        "kind": [
+          "item"
+        ],
+        "sort": [
+          "latest"
+        ],
+        "status": [
+          "open"
+        ]
+      },
+      "method": "GET",
+      "role": "공개 파티/아이템 게시물 목록",
+      "roleEvidenceScope": "홈의 두 게시판과 query kind/정렬/상태/limit를 함께 관측",
+      "statuses": [
+        200
+      ],
+      "observationCount": 1,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 172,
+          "transactionId": "request-61",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/prices?live=1&limit=30",
+      "path": "/api/prices",
+      "query": {
+        "live": [
+          "1"
+        ],
+        "limit": [
+          "30"
+        ]
+      },
+      "method": "GET",
+      "role": "전체 시세표와 아이템별 시세·실시간 목록",
+      "roleEvidenceScope": "가격 화면 및 상세를 여는 동안 관측. 원시 JSON schema 미확인",
+      "statuses": [
+        200
+      ],
+      "observationCount": 1,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 191,
+          "transactionId": "request-63",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/promo-videos",
+      "path": "/api/promo-videos",
+      "query": {},
+      "method": "GET",
+      "role": "추천 영상 목록 후보",
+      "roleEvidenceScope": "홈 영상 영역과 함께 관측. 원시 JSON schema 미확인",
+      "statuses": [
+        200
+      ],
+      "observationCount": 1,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 192,
+          "transactionId": "request-64",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/megaphones",
+      "path": "/api/megaphones",
+      "query": {},
+      "method": "GET",
+      "role": "확성기 피드",
+      "roleEvidenceScope": "홈의 확성기 영역과 함께 관측. 원시 JSON schema 미확인",
+      "statuses": [
+        200
+      ],
+      "observationCount": 1,
+      "responseBodyRetained": false,
+      "schema": null,
+      "observations": [
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 210,
+          "transactionId": "request-72",
+          "status": 200,
+          "resourceType": "fetch",
+          "stepIndex": 0
+        }
+      ]
+    }
+  ],
+  "scripts": [
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/1.fe3fc749b4d0b156.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 151,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/1800.10b12265266a737b.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 319,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/2183.abb02c5c31c12f43.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 151,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 397,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/2589.8c56662766bc5594.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 114,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 304,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 394,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 130,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 292,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 146,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 375,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 624,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 146,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 153,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/2752-15f563b5d9d92f25.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 53,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 213,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 385,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 55,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 222,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 506,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 120,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 286,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 144,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 369,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 618,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 55,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 55,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 71,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 67,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/3273.39656540f6226bd3.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 317,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/3533.47299592f7f3d14e.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 313,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 199,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 509,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 194,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 145,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/3794-a6cbe3f16d804637.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 50,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 201,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 373,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 50,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 210,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 494,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 114,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 274,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 65,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 357,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 606,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 51,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 52,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 60,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 56,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/3896.fe82fda512869d84.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 53,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 36,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 387,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 53,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/4061.a5481199ac8332e0.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 304,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 164,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 114,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/4244.19ac9f992a21429f.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 57,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 56,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 384,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 55,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/4619.8e90fb91599b9139.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 55,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 54,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 381,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 57,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/4857.90a8586c8672883d.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 42,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 219,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 391,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 31,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/4bd1b696-8a4ab4fdf0ae305a.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 29,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 198,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 370,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 48,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 207,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 491,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 112,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 271,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 63,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 354,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 603,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 44,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 45,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 64,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 54,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/5141.605a693d5385015f.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 294,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 46,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 43,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/5703.a6f17a8a28e85ffd.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 110,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/6021-b0f6caef2eceb46f.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 44,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 210,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 382,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 44,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 219,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 503,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 51,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 283,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 52,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 366,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 615,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 42,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 41,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 49,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 46,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/6355.b4f4bd61cdc74501.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 147,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/7473.199871369b3958fb.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 515,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/7671.f54006459568e1e6.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 151,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/7940.56bce85b283cd1ca.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 116,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 67,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 378,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 66,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/8734.89db82fa1910b74f.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 142,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/9348.e99b217ed018c19f.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 318,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 650,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/9398.97000f96f447977e.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 292,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 26,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 37,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/9629.7099daad77b25bb6.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 108,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/9632.f81758cd4b73cb93.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 615,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/9927.0135d6b589d99038.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 155,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 400,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/app/%5Blocale%5D/%5B...path%5D/page-2eda9fa09abdba96.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 23,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 216,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 388,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 27,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 225,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 509,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 42,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 289,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 43,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 372,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 621,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 35,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 34,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 43,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 36,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/app/layout-618345e1409141cd.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 40,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 207,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 379,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 41,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 216,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 500,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 47,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 280,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 47,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 363,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 612,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 38,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 39,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 45,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 44,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/main-app-8fadc8baa1860d4a.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 25,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 204,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 376,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 39,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 213,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 497,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 34,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 277,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 32,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 360,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 609,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 33,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 32,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 41,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 34,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/webpack-e50bc8228c1c45bd.js",
+      "responseBodyRetained": false,
+      "observations": [
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 38,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 195,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_0f05c6fa1b71147d0405ff406b66396a3fb5fde5b3d1a165ed45887ed7abe798",
+          "sequence": 367,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 34,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 204,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_1adb7d22e1c4cbc4be8cf94b3fa1849fd9e87a6e85b011c09ca1ff787e43f302",
+          "sequence": 488,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 45,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_36a923e53bc7f7e6f6c7b79e5befdbdf7c66e92b4a9fe07a188e30deb4552f12",
+          "sequence": 268,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 34,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 351,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_4f3d709f2cc607e2d8544da7bc22af1ffd8e49316dc51eb6b9a3b3449047c842",
+          "sequence": 600,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_56aa7ceaf9db5f710b7797def62a2db65ea5500c6805bff4db4bdcadc07400c6",
+          "sequence": 40,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+          "sequence": 27,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_bcd116d83855795a21c61eb3fb578882e239e66b721399b6b707716f613da3de",
+          "sequence": 29,
+          "status": 200
+        },
+        {
+          "evidenceId": "ev_f47ea95aab93cdec98518c5c83c8f2035dfbe99d1e938fe80dd4b0bf832ed447",
+          "sequence": 42,
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "hostResponseCounts": {
+    "xn--bj0bv7uo4la196f.com": 949,
+    "static.cloudflareinsights.com": 15,
+    "fonts.googleapis.com": 15,
+    "fonts.gstatic.com": 293,
+    "i.ytimg.com": 4
+  },
+  "resourceFamilies": [
+    {
+      "prefix": "/codex/monsters/",
+      "examples": [
+        "dark-stump.png",
+        "red-snail.webp"
+      ],
+      "meaning": "same-origin static monster artwork"
+    },
+    {
+      "prefix": "/codex/items/",
+      "examples": [
+        "white-potion.png",
+        "razor.png"
+      ],
+      "meaning": "same-origin static item artwork"
+    },
+    {
+      "prefix": "/codex/npcs/",
+      "examples": [
+        "maple-administrator.webp",
+        "pio.png"
+      ],
+      "meaning": "same-origin static NPC artwork"
+    },
+    {
+      "prefix": "/codex/skills/",
+      "examples": [
+        "precise-strikes.png",
+        "power-strike.png"
+      ],
+      "meaning": "same-origin static skill artwork"
+    },
+    {
+      "prefix": "/item-icons/",
+      "examples": [
+        "2040801.png",
+        "1302000.png"
+      ],
+      "meaning": "same-origin numeric item icons"
+    },
+    {
+      "prefix": "/skill-anim/",
+      "examples": [
+        "1001004.webp"
+      ],
+      "meaning": "same-origin skill animation artwork"
+    }
+  ],
+  "refreshEvidence": {
+    "observed": "data-overrides and version each responded15 times across the retained page loads; no response body or event wallclock timestamps retained. A market UI snapshot displayed age14seconds.",
+    "priceAggregationDisclosure": {
+      "baseWindowHours": 24,
+      "expandWhenSampleBelow": 5,
+      "fallbackDays": [
+        3,
+        7
+      ],
+      "perPersonItemDedup": "last message per day",
+      "outlierFactor": 4.5,
+      "estimateMeaning": "midpoint between sell and buy asking values, not guaranteed executed sale",
+      "equipment": "own marketplace listings separated by options"
+    },
+    "pollIntervalMs": null,
+    "backendSchedule": null,
+    "limits": "Request names/live=1/after=0 are observed; cursor meaning, polling cadence, backend ingestion schedule and API schema require shipped code or fresh response evidence."
+  },
+  "boundedLiveProbes": [
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/version",
+      "method": "GET",
+      "client": "curl, no cookies or credentials, no spoofed browser headers",
+      "status": 403,
+      "headers": {
+        "date": "Wed, 21 Oct 2026 08:49:37 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "cache-control": "no-store"
+      },
+      "bytes": 9,
+      "sha256": "78342a0905a72ce44da083dcb5d23b8ea0c16992ba2a82eece97e033d76ba3d3",
+      "bodyMeaning": "Forbidden",
+      "reaEvidenceId": null
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/data-overrides",
+      "method": "GET",
+      "client": "curl, no cookies or credentials, no spoofed browser headers",
+      "status": 403,
+      "headers": {
+        "date": "Wed, 21 Oct 2026 08:49:37 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "cache-control": "no-store"
+      },
+      "bytes": 9,
+      "sha256": "78342a0905a72ce44da083dcb5d23b8ea0c16992ba2a82eece97e033d76ba3d3",
+      "bodyMeaning": "Forbidden",
+      "reaEvidenceId": null
+    },
+    {
+      "url": "https://xn--bj0bv7uo4la196f.com/api/item-sources?ids=2040801",
+      "method": "GET",
+      "client": "curl, no cookies or credentials, no spoofed browser headers",
+      "status": 403,
+      "headers": {
+        "date": "Wed, 21 Oct 2026 08:49:37 GMT",
+        "content-type": "text/plain;charset=UTF-8",
+        "cache-control": "no-store"
+      },
+      "bytes": 9,
+      "sha256": "78342a0905a72ce44da083dcb5d23b8ea0c16992ba2a82eece97e033d76ba3d3",
+      "bodyMeaning": "Forbidden",
+      "reaEvidenceId": null
+    }
+  ],
+  "inferences": [
+    {
+      "confidence": "medium",
+      "statement": "The observed DB-related screens load own-origin application chunks and a small override endpoint rather than a separate external game-data XHR. Static bundled data or SSR with overrides is a supported architecture hypothesis, not proof of the server upstream."
+    },
+    {
+      "confidence": "high-within-capture",
+      "statement": "No browser response from maplestory.io, mapleclassic.wiki or meowdb was observed in these11GGrecords. This does not rule out build-time imports or server-side calls."
+    }
+  ],
+  "reusePaths": [
+    {
+      "kind": "game facts and formulas",
+      "path": "Follow the attributed MapleClassic Wiki original and its license; independently verify current client facts. Do not use GG distribution files as a substitute for the upstream attribution/license."
+    },
+    {
+      "kind": "prices and megaphones",
+      "path": "Observed own-origin routes identify GG own-data surfaces; captures do not establish a documented reusable public API. Current CLI requests return403. Do not bypass access controls or claim an authenticated owl API was found."
+    },
+    {
+      "kind": "static artwork",
+      "path": "Observed own-origin image files identify local hosting/caching only; original WZ/image provider cannot be inferred from a local filename."
+    }
+  ],
+  "limitations": [
+    "Capture windows are short selected scenarios, not exhaustive whole-site traffic.",
+    "Response bodies were not selected in these historical records, so JSON schemas/row counts cannot be recovered from them.",
+    "UI source statements are observed disclosures, not independent audits of server ingestion.",
+    "GG own authored content and data organization carry explicit reuse restrictions; the site separately acknowledges licensed CC BY-NC-SA upstream material.",
+    "No authenticated owl request/result, session storage, user cookie, API token or private user data was inspected."
+  ],
+  "staticArtifactFindings": {
+    "artifacts": [
+      {
+        "file": "shared2752.js",
+        "sourceUrl": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/2752-15f563b5d9d92f25.js",
+        "sha256": "61b4999f3bd794423f1854d40eed401127a6a95099fa5bed81ac5f8f661bb503",
+        "bytes": 1636236
+      },
+      {
+        "file": "codex7940.js",
+        "sourceUrl": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/7940.56bce85b283cd1ca.js",
+        "sha256": "62b2c2ca92788db73e3ab18096d9955eba23be5c28f425f2eb96b9653c9c5778",
+        "bytes": 292053
+      },
+      {
+        "file": "shared2589.js",
+        "sourceUrl": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/2589.8c56662766bc5594.js",
+        "sha256": "6bdf9f147ee085f22e051969b7f94fa65fd74c2f648667b45c975f324deb3b12",
+        "bytes": 2690116
+      }
+    ],
+    "reaEvidenceIds": [
+      "ev_47eec1404dc58216156b661098af3136a75d37c845f3868bc542c38e899c33f4",
+      "ev_0d8e15c61615457a70b29ec4ba3c74244502604da2abce72b596a0bda976188e"
+    ],
+    "scope": "Static source literal transformation only, no bundle/bootstrap execution, no full dataset export",
+    "reportPath": "research/output/gg-embedded-data-shapes-20261021.json",
+    "modules": [
+      {
+        "file": "shared2752.js",
+        "module": "2085",
+        "sourceRange": {
+          "start": 64,
+          "end": 822383
+        },
+        "root": {
+          "type": "object",
+          "count": 7,
+          "keys": [
+            "quests",
+            "skills",
+            "monsters",
+            "maps",
+            "items",
+            "updated",
+            "provenance"
+          ]
+        },
+        "collections": {
+          "quests": {
+            "type": "array",
+            "count": 187,
+            "firstFields": [
+              "id",
+              "kind",
+              "name",
+              "source",
+              "image",
+              "fields"
+            ]
+          },
+          "skills": {
+            "type": "array",
+            "count": 93,
+            "firstFields": [
+              "id",
+              "kind",
+              "name",
+              "source",
+              "image",
+              "fields",
+              "levels",
+              "gameid"
+            ]
+          },
+          "monsters": {
+            "type": "array",
+            "count": 55,
+            "firstFields": [
+              "id",
+              "kind",
+              "name",
+              "source",
+              "image",
+              "fields"
+            ]
+          },
+          "maps": {
+            "type": "array",
+            "count": 117,
+            "firstFields": [
+              "id",
+              "kind",
+              "name",
+              "source",
+              "image",
+              "fields"
+            ]
+          },
+          "items": {
+            "type": "array",
+            "count": 1180,
+            "firstFields": [
+              "id",
+              "kind",
+              "name",
+              "source",
+              "image",
+              "fields"
+            ]
+          },
+          "updated": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "object",
+            "count": 4,
+            "keys": [
+              "name",
+              "url",
+              "license",
+              "basis"
+            ]
+          }
+        },
+        "sourceHosts": [
+          "mapleclassic.wiki"
+        ],
+        "updated": "2026-10-11"
+      },
+      {
+        "file": "shared2752.js",
+        "module": "53730",
+        "sourceRange": {
+          "start": 951001,
+          "end": 951606
+        },
+        "root": {
+          "type": "object",
+          "count": 6,
+          "keys": [
+            "items",
+            "monsters",
+            "quests",
+            "maps",
+            "npcs",
+            "skills"
+          ]
+        },
+        "collections": {
+          "items": {
+            "type": "number",
+            "value": 2513
+          },
+          "monsters": {
+            "type": "number",
+            "value": 73
+          },
+          "quests": {
+            "type": "number",
+            "value": 276
+          },
+          "maps": {
+            "type": "number",
+            "value": 278
+          },
+          "npcs": {
+            "type": "number",
+            "value": 186
+          },
+          "skills": {
+            "type": "number",
+            "value": 93
+          }
+        },
+        "sourceHosts": [],
+        "updated": null
+      },
+      {
+        "file": "shared2752.js",
+        "module": "56512",
+        "sourceRange": {
+          "start": 952162,
+          "end": 1283983
+        },
+        "root": {
+          "type": "object",
+          "count": 4,
+          "keys": [
+            "names",
+            "texts",
+            "effects",
+            "provenance"
+          ]
+        },
+        "collections": {
+          "names": {
+            "type": "object",
+            "count": 3978,
+            "keys": []
+          },
+          "texts": {
+            "type": "object",
+            "count": 2044,
+            "keys": []
+          },
+          "effects": {
+            "type": "object",
+            "count": 77,
+            "keys": []
+          },
+          "provenance": {
+            "type": "object",
+            "count": 3,
+            "keys": [
+              "note",
+              "source",
+              "license"
+            ]
+          }
+        },
+        "sourceHosts": [
+          "mapleclassic.wiki"
+        ],
+        "updated": null
+      },
+      {
+        "file": "shared2589.js",
+        "module": "92589",
+        "sourceRange": {
+          "start": 64,
+          "end": 2503460
+        },
+        "root": {
+          "type": "object",
+          "count": 18,
+          "keys": [
+            "maps",
+            "portals",
+            "monster_spawns",
+            "monsters",
+            "npcs",
+            "map_npcs",
+            "items",
+            "monster_drops",
+            "shops",
+            "shop_items",
+            "recipes",
+            "quests",
+            "quest_required_items",
+            "quest_steps",
+            "quest_rewards",
+            "skills",
+            "provenance",
+            "quest_enemies"
+          ]
+        },
+        "collections": {
+          "maps": {
+            "type": "array",
+            "count": 278,
+            "firstFields": [
+              "page",
+              "id",
+              "name_en",
+              "region",
+              "map_type",
+              "return_map",
+              "bgm",
+              "image",
+              "origin_x",
+              "origin_y",
+              "render_width",
+              "render_height",
+              "game_version",
+              "name_ko",
+              "name_ko_origin"
+            ]
+          },
+          "portals": {
+            "type": "array",
+            "count": 536,
+            "firstFields": [
+              "page",
+              "to_map",
+              "portal_name",
+              "direction",
+              "portal_type",
+              "x",
+              "y",
+              "game_version"
+            ]
+          },
+          "monster_spawns": {
+            "type": "array",
+            "count": 698,
+            "firstFields": [
+              "page",
+              "monster_id",
+              "map_id",
+              "spawn_count",
+              "region",
+              "variant",
+              "game_version"
+            ]
+          },
+          "monsters": {
+            "type": "array",
+            "count": 73,
+            "firstFields": [
+              "page",
+              "id",
+              "name_en",
+              "name_ko",
+              "level",
+              "hp",
+              "mp",
+              "exp",
+              "weapon_attack",
+              "magic_attack",
+              "physical_defense",
+              "magic_defense",
+              "accuracy",
+              "avoidability",
+              "speed",
+              "knockback",
+              "element_attack",
+              "element_weak",
+              "element_resist",
+              "boss",
+              "undead",
+              "image",
+              "game_version",
+              "released",
+              "name_ko_origin"
+            ]
+          },
+          "npcs": {
+            "type": "array",
+            "count": 186,
+            "firstFields": [
+              "page",
+              "id",
+              "name_en",
+              "name_ko",
+              "location",
+              "map",
+              "region",
+              "image",
+              "game_version",
+              "name_ko_origin",
+              "aliases_ko"
+            ]
+          },
+          "map_npcs": {
+            "type": "array",
+            "count": 174,
+            "firstFields": [
+              "page",
+              "npc",
+              "x",
+              "y",
+              "game_version"
+            ]
+          },
+          "items": {
+            "type": "array",
+            "count": 2513,
+            "firstFields": [
+              "page",
+              "id",
+              "name_en",
+              "description_en",
+              "category",
+              "subcategory",
+              "tradeable",
+              "image",
+              "game_version",
+              "name_ko",
+              "name_ko_origin",
+              "description_ko",
+              "aliases_ko"
+            ]
+          },
+          "monster_drops": {
+            "type": "array",
+            "count": 158,
+            "firstFields": [
+              "page",
+              "monster_id",
+              "item_id",
+              "drop_rate",
+              "category",
+              "game_version",
+              "sample_kills",
+              "sample_drops",
+              "observed_on",
+              "rate_low",
+              "rate_high",
+              "sampling_precision",
+              "quest_flag",
+              "observed_on__precision"
+            ]
+          },
+          "shops": {
+            "type": "array",
+            "count": 30,
+            "firstFields": [
+              "page",
+              "name_en",
+              "npc",
+              "map",
+              "region",
+              "town",
+              "shop_type",
+              "currency",
+              "image",
+              "game_version"
+            ]
+          },
+          "shop_items": {
+            "type": "array",
+            "count": 555,
+            "firstFields": [
+              "page",
+              "shop_id",
+              "item_id",
+              "price",
+              "currency",
+              "item_type",
+              "game_version"
+            ]
+          },
+          "recipes": {
+            "type": "array",
+            "count": 348,
+            "firstFields": [
+              "page",
+              "profession",
+              "profession_id",
+              "recipe_id",
+              "level",
+              "category",
+              "output_item",
+              "output_count",
+              "craft_exp",
+              "meso_cost",
+              "ingredients",
+              "game_version"
+            ]
+          },
+          "quests": {
+            "type": "array",
+            "count": 276,
+            "firstFields": [
+              "page",
+              "id",
+              "name_en",
+              "description_en",
+              "required_level",
+              "repeatable",
+              "region",
+              "area",
+              "quest_type",
+              "game_version",
+              "name_ko",
+              "name_ko_origin",
+              "description_ko",
+              "aliases_ko"
+            ]
+          },
+          "quest_required_items": {
+            "type": "array",
+            "count": 263,
+            "firstFields": [
+              "page",
+              "quest_id",
+              "item_id",
+              "quantity",
+              "game_version"
+            ]
+          },
+          "quest_steps": {
+            "type": "array",
+            "count": 837,
+            "firstFields": [
+              "page",
+              "quest_id",
+              "step_number",
+              "title",
+              "description",
+              "destination_map",
+              "target_npc",
+              "description_ko",
+              "title_ko"
+            ]
+          },
+          "quest_rewards": {
+            "type": "array",
+            "count": 942,
+            "firstFields": [
+              "page",
+              "quest_id",
+              "quantity",
+              "reward_type",
+              "game_version"
+            ]
+          },
+          "skills": {
+            "type": "array",
+            "count": 93,
+            "firstFields": [
+              "page",
+              "id",
+              "name_en",
+              "job",
+              "tier",
+              "max_level",
+              "description_en",
+              "image",
+              "game_version",
+              "name_ko",
+              "name_ko_origin",
+              "description_ko"
+            ]
+          },
+          "provenance": {
+            "type": "object",
+            "count": 4,
+            "keys": [
+              "source",
+              "license",
+              "updated",
+              "note"
+            ]
+          },
+          "quest_enemies": {
+            "type": "array",
+            "count": 82,
+            "firstFields": [
+              "page",
+              "quest_id",
+              "monster_id",
+              "quantity",
+              "game_version"
+            ]
+          }
+        },
+        "sourceHosts": [
+          "mapleclassic.wiki"
+        ],
+        "updated": null
+      }
+    ],
+    "limits": "Metadata/schema/count summaries only; no full dataset export."
+  }
+}

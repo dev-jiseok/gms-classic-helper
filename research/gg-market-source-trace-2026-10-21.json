@@ -1,0 +1,248 @@
+{
+  "checkedAt": "2026-10-21T08:50:40Z/2026-10-21T08:50:41Z",
+  "access": {
+    "mode": "Fresh provider-owned Chrome, anonymous GET, no login or supplied cookies",
+    "earlier403": "Earlier team investigation recorded 403/Forbidden. Current 200 differs by observation time; causal reason is unknown."
+  },
+  "endpoints": [
+    {
+      "transactionId": "request-1",
+      "url": "https://xn--bj0bv7uo4la196f.com/api/prices?live=1&limit=1&after=0",
+      "status": 200,
+      "headers": [
+        {
+          "name": "cache-control",
+          "value": "no-store"
+        },
+        {
+          "name": "content-type",
+          "value": "application/json"
+        },
+        {
+          "name": "date",
+          "value": "Wed, 21 Oct 2026 08:50:40 GMT"
+        },
+        {
+          "name": "x-content-owner",
+          "value": "glclme / xn--bj0bv7uo4la196f.com since 2026-10-11"
+        }
+      ]
+    },
+    {
+      "transactionId": "request-2",
+      "url": "https://xn--bj0bv7uo4la196f.com/api/prices?item=4010001",
+      "status": 200,
+      "headers": [
+        {
+          "name": "cache-control",
+          "value": "no-store"
+        },
+        {
+          "name": "content-type",
+          "value": "application/json"
+        },
+        {
+          "name": "date",
+          "value": "Wed, 21 Oct 2026 08:50:41 GMT"
+        },
+        {
+          "name": "x-content-owner",
+          "value": "glclme / xn--bj0bv7uo4la196f.com since 2026-10-11"
+        }
+      ]
+    },
+    {
+      "transactionId": "request-3",
+      "url": "https://xn--bj0bv7uo4la196f.com/api/prices",
+      "status": 200,
+      "headers": [
+        {
+          "name": "cache-control",
+          "value": "no-cache"
+        },
+        {
+          "name": "content-type",
+          "value": "application/json"
+        },
+        {
+          "name": "date",
+          "value": "Wed, 21 Oct 2026 08:50:41 GMT"
+        },
+        {
+          "name": "etag",
+          "value": "W/\"p22-8593f665\""
+        },
+        {
+          "name": "x-content-owner",
+          "value": "glclme / xn--bj0bv7uo4la196f.com since 2026-10-11"
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "shape": [
+      "updated",
+      "synced",
+      "latest",
+      "stale",
+      "version",
+      "messages",
+      "quotes",
+      "listings",
+      "items",
+      "source",
+      "ready"
+    ],
+    "itemCount": 385,
+    "messages": 45074,
+    "quoteCount": 7411,
+    "exchangeListings": 225,
+    "rowFields": [
+      "id",
+      "s",
+      "b",
+      "t",
+      "h",
+      "d",
+      "n",
+      "last",
+      "src",
+      "k",
+      "v"
+    ],
+    "explicitBoardRows": 89,
+    "otherRows": 296,
+    "sourceField": "",
+    "dates": {
+      "aggregateUpdated": "2026-10-21T08:50:23.900Z",
+      "aggregateSynced": "2026-10-21T08:50:23.900Z",
+      "latest": "2026-10-21T08:50:03.971Z"
+    }
+  },
+  "itemDetail": {
+    "itemId": "4010001",
+    "fields": [
+      "row",
+      "quotes",
+      "updated"
+    ],
+    "quoteCount": 36,
+    "quoteFields": [
+      "side",
+      "price",
+      "at",
+      "ch"
+    ],
+    "mostRecentQuoteAt": "2026-10-21T02:17:31.455Z"
+  },
+  "live": {
+    "requestedLimit": 1,
+    "returnedCount": 1,
+    "fields": [
+      "quotes",
+      "status"
+    ],
+    "quoteFields": [
+      "msg",
+      "item",
+      "side",
+      "price",
+      "at",
+      "ch"
+    ],
+    "latestReturnedPricedQuoteAt": "2026-10-21T08:48:47.570Z"
+  },
+  "mapping": {
+    "sameNumericIdJoin": 321,
+    "total": 385,
+    "unmatched": 64,
+    "unmatchedExamples": [
+      "99000001",
+      "99000002",
+      "99000003"
+    ],
+    "rule": "Do not assume all site IDs are ordinary WZ IDs or map unmatched rows by guessed names."
+  },
+  "polling": {
+    "mainBoard": {
+      "visibleSeconds": 20,
+      "hiddenSeconds": 80,
+      "etag": true,
+      "visibilityResume": "immediate"
+    },
+    "homeSnapshot": {
+      "visibleSeconds": 30,
+      "hiddenSeconds": 120
+    },
+    "liveFeed": {
+      "visibleSeconds": 10,
+      "hiddenSeconds": 60,
+      "cursor": "after=max(received at)"
+    },
+    "note": "Client polling, not a verified server ingestion or database TTL."
+  },
+  "provenance": {
+    "siteDeclared": "Own game-screen megaphone collector; equipment from the site exchange, per options.",
+    "clientApiOrigin": "same-origin",
+    "priceChunkExternalHttpUrls": 0,
+    "serverInternalStorage": "unknown",
+    "serverExternalUpstreamCalls": "not established by client evidence",
+    "publicDocumentedReuseContract": "not verified"
+  },
+  "shippedArtifact": {
+    "url": "https://xn--bj0bv7uo4la196f.com/_next/static/chunks/5141.605a693d5385015f.js",
+    "bytes": 27653,
+    "sha256": "aee9a63ecfe83cd90d22bf48f5d0c4a77bb4d30a20ebe411d4719954e7a083ee",
+    "module": 15141,
+    "offsets": {
+      "mainFetchAndTimer": [
+        7524,
+        8550
+      ],
+      "detailRequest": [
+        11800,
+        12150
+      ],
+      "liveCursorAndTimer": [
+        15100,
+        15670
+      ],
+      "optionSourceRendering": [
+        12350,
+        13900
+      ],
+      "snapshotPoll": [
+        23610,
+        23800
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_82afceae8bf8ce8270eb85bd6327deb5d20d575574e33c976493d6ba372f1a0a",
+      "kind": "Historical normal market browser, source/method explanation, incomplete event closure"
+    },
+    {
+      "id": "ev_037d39dfb89fcbf7ce0adb658db3448e115b47ec7f9b1cd5d68b10fe1147e770",
+      "kind": "Public shipped market JavaScript 200, complete capture"
+    },
+    {
+      "id": "ev_f5d570cfe75bc74ad49e36d4b6f0361cb3e20ac5b5c4714e6443ec3e74b691d5",
+      "kind": "REA inert JavaScript application analysis, one parsed module"
+    },
+    {
+      "id": "ev_3535fa4c822fd596615e83bd749ab7090d81ba0b5e4a87874dea05b5de828993",
+      "kind": "Static same-origin endpoint fetch/json consumer trace, two seed matches"
+    },
+    {
+      "id": "ev_0acb206a4ef2a4838d304c2fa4fd202597ef237b0c9e74ff446910d86f0e9e70",
+      "kind": "Three anonymous public GET responses 200; aggregate response body retention incomplete, DOM complete"
+    }
+  ],
+  "limitations": [
+    "Current visible price endpoint availability is not a reusable API license.",
+    "No server code or database was accessed.",
+    "No login, authentication bypass, or access-control workarounds were used.",
+    "Bounded shapes and counts only; full live responses and shipped code are not embedded in this report."
+  ]
+}

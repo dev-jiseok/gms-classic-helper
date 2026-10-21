@@ -1,0 +1,20 @@
+{
+  "sourceUrl": "https://maplestory.nexon.com/Media/Font",
+  "downloadUrl": "https://ssl.nexon.com/s2/Game/Maplestory/Maple2013/image/data/MaplestoryFont_TTF.zip",
+  "verifiedAt": "2026-10-21",
+  "unmodifiedFontFiles": true,
+  "files": [
+    {
+      "file": "maplestory-light.ttf",
+      "originalName": "Maplestory Light.ttf",
+      "bytes": 1357656,
+      "sha256": "6d51d8e576f77b01914095aa1f69f9d37c16d93fe940d748962867f218442ba9"
+    },
+    {
+      "file": "maplestory-bold.ttf",
+      "originalName": "Maplestory Bold.ttf",
+      "bytes": 1394116,
+      "sha256": "d57eaff48a793ff872a0f33bba2943d058d07c81ed64c68054858a287b85811a"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "provenance":{"kind":"contract-fixture","note":"Synthetic values exercise the publicly shipped parser contract; this is not a retained live API response.","sourceUrl":"https://xn--bj0bv7uo4la196f.com/_next/static/chunks/5141.605a693d5385015f.js","sourceModules":["15141.B","15141.P","23075.jg"],"checkedAt":"2026-10-21T08:50:41.000Z"},
+  "summary":{
+    "updated":1792572623900,"synced":1792572623900,"latest":1792572603971,"stale":false,"ready":true,"messages":45074,"quotes":7411,"listings":225,
+    "items":[
+      {"id":"4010001","s":[450,425,475,400,499,3],"b":[350,313,403,300,500,6],"t":400,"n":9,"last":1792549051455,"d":2,"h":[["2026-10-20",400,2,300,4],["2026-10-21",450,3,350,6]]},
+      {"id":"1082002","s":[100000,90000,110000,80000,120000,4],"b":null,"t":100000,"n":7,"last":1792570000000,"src":"board","k":"c","v":[{"k":"c","s":[100000,90000,110000,80000,120000,4],"b":null,"n":4,"sold":1},{"k":"u1|a2","s":[250000,230000,260000,220000,270000,3],"b":null,"n":3,"sold":2}],"h":[]},
+      {"id":"99000001","s":null,"b":null,"t":null,"n":0,"last":null,"src":"board","k":"future-format","v":[]}
+    ]
+  },
+  "detail":{
+    "row":{"id":"1082002","s":[100000,90000,110000,80000,120000,4],"b":null,"n":7,"src":"board","k":"c","v":[{"k":"u1|a2","s":[250000,230000,260000,220000,270000,3],"b":null,"n":3,"sold":2}],"h":[]},
+    "updated":1792572623900,
+    "quotes":[{"side":"sell","price":250000,"at":1792570000000,"ch":2,"k":"u1|a2","sold":true},{"side":"buy","price":90000,"at":1792569900000,"ch":null,"k":"c","sold":false}]
+  }
+}

@@ -1,0 +1,3 @@
+import { communitySnapshot, socialAction, socialUser, checkOrigin, socialResponse, SocialError } from '@/lib/social-server';
+export async function GET(request:Request){try{const {id}=await socialUser(),room=(new URL(request.url).searchParams.get('room')||'our-party').slice(0,64);return Response.json(await communitySnapshot(room,id),{headers:{'Cache-Control':'private, no-store'}});}catch(e){return socialResponse(e);}}
+export async function POST(request:Request){try{const {id}=await socialUser();checkOrigin(request);const text=await request.text();if(text.length>24000)throw new SocialError('내용이 너무 길어요.',413);let b;try{b=JSON.parse(text);}catch{throw new SocialError('요청 형식을 확인해 주세요.');}return Response.json(await socialAction(id,b));}catch(e){return socialResponse(e);}}

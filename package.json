@@ -1,0 +1,26 @@
+{
+  "name": "gms-classic-helper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GMS Classic Helper and its local reverse engineering workspace",
+  "engines": {
+    "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
+  },
+  "scripts": {
+    "rea": "node scripts/rea.mjs",
+    "rea:setup:plan": "node scripts/rea.mjs setup --client codex --dry-run --json",
+    "rea:setup": "node scripts/rea.mjs setup --client codex --yes --json",
+    "rea:doctor": "node scripts/rea.mjs doctor --client codex --provider ghidra --skill --json",
+    "rea:verify": "node scripts/verify-rea.mjs",
+    "rea:browser": "node scripts/rea-browser.mjs",
+    "rea:web:verify": "node scripts/verify-rea-web.mjs",
+    "dev": "npm --prefix web run dev --",
+    "build": "npm --prefix web run build",
+    "check": "npm --prefix web run check",
+    "test": "npm --prefix web test"
+  },
+  "devDependencies": {
+    "rea-agents": "6.7.0"
+  }
+}

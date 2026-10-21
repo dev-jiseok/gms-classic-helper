@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `social_requests_active_member_unique` ON `social_requests` (`post_id`,`user_id`) WHERE "social_requests"."status" in ('pending','accepted');
