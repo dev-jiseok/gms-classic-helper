@@ -1,4 +1,4 @@
-# 메이플 컴패스 사용 설명서
+# GMS Classic Helper 사용 설명서
 
 앱0.6.1 기준입니다. 기능이 어떤 자료를 필요로 하는지, 무엇을 입력하고 어떤 결과를 읽어야 하는지 설명합니다. [실제 앱 열기](https://maple-compass-gms.ethan-lee394436.chatgpt.site) · [프로젝트 소개](../../README.md) · [개발·설치 안내](../README.md)
 

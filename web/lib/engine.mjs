@@ -13,7 +13,7 @@ export function initialState() {
 }
 export function normalizeState(input) {
   const base = initialState();
-  if (!input || input.version !== 1 || !Array.isArray(input.profiles) || input.profiles.length < 1 || input.profiles.length > 50) throw new Error('메이플 컴패스 백업 파일을 선택해 주세요.');
+  if (!input || input.version !== 1 || !Array.isArray(input.profiles) || input.profiles.length < 1 || input.profiles.length > 50) throw new Error('GMS Classic Helper 백업 파일을 선택해 주세요.');
   const ids=new Set();
   for(const p of input.profiles){if(!p||typeof p!== 'object'||typeof p.id!=='string'||!p.id.trim()||p.id.length>50||['__proto__','constructor','prototype'].includes(p.id)||ids.has(p.id))throw new Error('프로필 ID가 비어 있거나 중복되어 있어요.');ids.add(p.id);}
   const result = { ...base, ...input };

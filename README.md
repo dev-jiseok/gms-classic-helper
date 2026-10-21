@@ -1,4 +1,4 @@
-# 메이플 컴패스 · GMS Classic Helper
+# GMS Classic Helper
 
 GMS Classic World의 **도감·공략·시세·캐릭터 계획을 연결하는 웹 앱**입니다. 내 캐릭터의 직업·레벨·장비·예산과 실제 사냥 기록을 바탕으로 다음 퀘스트, 사냥터, 장비 교체를 비교합니다.
 

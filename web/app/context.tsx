@@ -3,6 +3,7 @@ import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { initialState, normalizeState } from '@/lib/engine.mjs';
 export const Context=createContext<any>(null);
 export const useCompass=()=>useContext(Context);
+// Retain the existing storage key so the display-name change preserves saved characters.
 const STORAGE='maple-compass-v1';
 export function useAppState(){
  const [state,setState]=useState<any>(initialState),[ready,setReady]=useState(false),[cloud,setCloud]=useState(false),[sync,setSync]=useState('브라우저에 저장'),[toast,setToast]=useState(''),[conflict,setConflict]=useState<any>(null),[saveTick,setSaveTick]=useState(0);

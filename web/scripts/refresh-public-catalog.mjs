@@ -17,7 +17,7 @@ async function checkpoint(){const path=resolve(destination,'manifest.json');awai
 async function request(url){
  for(let attempt=0;attempt<3;attempt++){
   await sleep(Math.max(0,lastStart+150-Date.now()));lastStart=Date.now();
-  const response=await fetch(url,{signal:AbortSignal.timeout(20000),redirect:'error',headers:{'User-Agent':'MapleCompassPersonalHelper/0.3 (public Wiki factual catalog; no authentication)'}});
+  const response=await fetch(url,{signal:AbortSignal.timeout(20000),redirect:'error',headers:{'User-Agent':'GMSClassicHelper/0.3 (public Wiki factual catalog; no authentication)'}});
   if(response.status===429||response.status>=500){if(attempt===2)throw Error('Public source HTTP '+response.status);const retry=response.headers.get('retry-after'),delay=retry&&Number.isFinite(Number(retry))?Number(retry)*1000:1000*(attempt+1);await sleep(Math.min(60000,delay));continue;}
   if(!response.ok)throw Error('Public source HTTP '+response.status+' '+new URL(url).pathname);
   const text=await response.text();if(Buffer.byteLength(text)>12_000_000)throw Error('Public source response exceeds12MB bound');

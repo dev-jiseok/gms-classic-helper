@@ -59,7 +59,7 @@ export function ClassicHeader({onSearch,searchOpen=false}: {onSearch:()=>void;se
   {(open||mobile)&&<button className={`classic-nav-shade ${mobile?'is-mobile':''}`} aria-label="열린 메뉴 닫기" tabIndex={-1} onClick={close}/>}
   <header className="classic-header" ref={root}>
    <div className="classic-header-inner">
-    <button className="classic-brand" onClick={()=>{close();navigate('today');}} aria-label="메이플 컴패스 홈"><GameVisual kind="item" id="4031134" name="단풍잎" size="sm"/><span><strong>메이플 컴패스<span>.</span></strong><small>OUR MAPLE CLASSIC</small></span></button>
+    <button className="classic-brand" onClick={()=>{close();navigate('today');}} aria-label="GMS Classic Helper 홈"><GameVisual kind="item" id="4031134" name="단풍잎" size="sm"/><span><strong>GMS Classic<br/><span>Helper</span></strong></span></button>
     <nav className="classic-desktop-nav" aria-label="주요 메뉴">{groupNav('classic-desktop')}</nav>
     <div className="classic-header-actions">
      <button className="classic-search" onClick={()=>{close();onSearch();}} aria-label="기능 찾기 · 통합 검색"><Search size={17}/><span>기능 찾기</span><kbd>⌘K</kbd></button>

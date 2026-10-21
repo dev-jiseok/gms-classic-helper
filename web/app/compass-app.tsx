@@ -51,7 +51,7 @@ export default function CompassApp(){
   <ClassicHeader onSearch={()=>setSearchOpen(true)} searchOpen={searchOpen}/>
   <div className="main-shell"><main id="page-content" className="page-content" tabIndex={-1}>
    <ClassicBreadcrumb/><Page route={route}/>
-   <footer className="app-footer"><span>메이플 컴패스 <b>✦</b> 함께 기록하는 클래식 모험</span><span>비공식 팬 프로젝트 · 게임 이미지 © NEXON · {app.ready?app.sync:'기록 불러오는 중…'}</span></footer>
+   <footer className="app-footer"><span>GMS Classic Helper <b>✦</b> 함께 기록하는 클래식 모험</span><span>비공식 팬 프로젝트 · 게임 이미지 © NEXON · {app.ready?app.sync:'기록 불러오는 중…'}</span></footer>
   </main></div>
   <ClassicStatusBar/>
   {app.toast&&<div className="toast" role="status"><Icon name="leaf" size={18}/>{app.toast}<button aria-label="알림 닫기" onClick={()=>app.notify('')}><X size={15}/></button></div>}

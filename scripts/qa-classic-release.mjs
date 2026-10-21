@@ -6,7 +6,7 @@ const origin=process.env.COMPASS_QA_ORIGIN??'http://127.0.0.1:5188';
 if(!/^http:\/\/(127\.0\.0\.1|localhost):\d+$/.test(origin))throw Error('Local built Worker only');
 const report={at:new Date().toISOString(),origin,routes:[],assets:[],unknown404:false,privateApi401:false};
 for(const [id,path] of Object.entries(FEATURE_PATHS)){
- const r=await fetch(origin+path,{signal:AbortSignal.timeout(15000)});assert.equal(r.status,200,path);const html=await r.text();assert(html.includes('메이플 컴패스'));report.routes.push({id,path,status:r.status});
+ const r=await fetch(origin+path,{signal:AbortSignal.timeout(15000)});assert.equal(r.status,200,path);const html=await r.text();assert(html.includes('GMS Classic Helper'));report.routes.push({id,path,status:r.status});
 }
 const unknown=await fetch(origin+'/not-a-feature');assert.equal(unknown.status,404);report.unknown404=true;
 for(const path of ['/art/classic-village-hero.png','/fonts/maplestory-light.ttf','/fonts/maplestory-bold.ttf']){
